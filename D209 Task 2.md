@@ -4,6 +4,7 @@
 ## .  Describe the purpose of this data mining report by doing the following:
 
 1.  Propose **one** question relevant to a real-world organizational situation that you will answer using **one** of the following prediction methods:
+	1.  The Telecommunication company is looking to identify which customers are more likely to churn. The company wants to increase its retention rate because it cost them 10 times more to acquire customers than to retain an existing customer
 
 	•  decision trees
 

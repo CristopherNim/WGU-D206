@@ -5,8 +5,10 @@
 
 ## A.  Describe the purpose of this data analysis by doing the following:
 1.  Summarize **one** research question that is relevant to a real-world organizational situation captured in the data set you have selected and that you will answer using multiple regression.
+- The Telecommunication has a theory that the customers who churn have a higher monthly charge than those customers who do not churn
 
 2.  Define the objectives or goals of the data analysis. Ensure that your objectives or goals are reasonable within the scope of the data dictionary and are represented in the available data.
+- The data analysis is going to build a model to predict the monthly charge of each customers. Then the team will build a model to predict the churn column. (Task 2)
 
 # **Part II: Method Justification**
 

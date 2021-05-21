@@ -5,9 +5,10 @@
 ## A.  Describe the purpose of this data analysis by doing the following:
 
 1.  Summarize **one** research question that is relevant to a real-world organizational situation captured in the data set you have selected and that you will answer using logistic regression.
+-  The Telecommunication company is looking to identify which customers are more likely to churn. The company wants to increase its retention rate because it cost them 10 times more to acquire customers than to retain an existing one 1    
 
-2.  Define the objectives or goals of the data analysis. Ensure that your objectives or goals are reasonable within the scope of the data dictionary and are represented in the available data.
-
+2. Define the objectives or goals of the data analysis. Ensure that your objectives or goals are reasonable within the scope of the data dictionary and are represented in the available data.
+- The goal of the analysis is to make model that is able to predict the churn at a 80 percent accuracy. 
   
 
 # **Part II: Method Justification**
