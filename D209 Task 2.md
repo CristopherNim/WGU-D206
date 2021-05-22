@@ -4,7 +4,7 @@
 ## .  Describe the purpose of this data mining report by doing the following:
 
 1.  Propose **one** question relevant to a real-world organizational situation that you will answer using **one** of the following prediction methods:
-	1.  The Telecommunication company is looking to identify which customers are more likely to churn. The company wants to increase its retention rate because it cost them 10 times more to acquire customers than to retain an existing customer
+	1.  The Telecommunication company is looking to identify which customers are more likely to churn. The company wants to increase its retention rate because it cost them 10 times more to acquire customers than to retain an existing customer. I am going to use random forest algorithm to predict the churn column. 
 
 	•  decision trees
 
@@ -13,6 +13,7 @@
 	•  advanced regression (i.e., lasso or ridge regression)
 
 2.  Define **one** goal of the data analysis. Ensure that your goal is reasonable within the scope of the scenario and is represented in the available data.  
+- The goal of the data analysis is to predict the churn column 
  
 
 # **Part II: Method Justification**
