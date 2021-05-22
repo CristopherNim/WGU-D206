@@ -16,11 +16,14 @@
 ## B.  Describe logistic regression methods by doing the following:
 
 1.  Summarize the assumptions of a logistic regression model.
-
+- First, Binary logistic regression requires the dependent variables to be binary and ordinal. 
+- The data observations need to be independent of each other. 
+- The independent variables should not have high correlation.
+- The dataset needs to have more than 10 row.
 2.  Describe the benefits of using the tool(s) you have chosen (i.e., Python, R, or both) in support of various phases of the analysis.
-
+- The team has chosen python because it is the most used tool for data analysis. It can be combined with SQL if more records need to be used. 
 3.  Explain why logistic regression is an appropriate technique to analyze the research question summarized in Part I.
-
+- Logistic regression is able to predict binary columns. It is easy to implement coding wise. Most importantly logistic regression has a lower bias than naive bayes that will be used later on the project.
   
 
 # **Part III: Data Preparation**
@@ -28,9 +31,11 @@
 ## C.  Summarize the data preparation process for logistic regression by doing the following:
 
 1.  Describe your data preparation goals and the data manipulations that will be used to achieve the goals.
-
+- During the data exploration the data analysis team ran chi square test and ANOVA test for feature extraction. The image below is the columns that are statistically significant to the churn column. Meaning that the columns are significant and we can be confident that they help predict the churn values
+-  ![[Pasted image 20210517185746.png]]
 2.  Discuss the summary statistics, including the target variable and _all_ predictor variables that you will need to gather from the data set to answer the research question.
-
+- The Target variable is the churn column. The churn column is 75% No (the customer is still with the company) and 25% Yes (customer churn the company). The predictor variable.
+- The predictor variables will help predict the churn column. According to chi-square and ANOVA test the columns have a relationship with the churn column. The other columns that were rejected do not have a relationship with the churn column. Therefore, they will not be used to predict the churn column. 
 3.  Explain the steps used to prepare the data for the analysis, including the annotated code.
 
 4.  Generate univariate and bivariate visualizations of the distributions of variables in the cleaned data set. Include the target variable in your bivariate visualizations.

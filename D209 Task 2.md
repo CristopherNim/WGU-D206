@@ -13,7 +13,7 @@
 	•  advanced regression (i.e., lasso or ridge regression)
 
 2.  Define **one** goal of the data analysis. Ensure that your goal is reasonable within the scope of the scenario and is represented in the available data.  
-- The goal of the data analysis is to predict the churn column 
+- The goal of the data analysis is to predict the churn column at a 80 percent accuracy.
  
 
 # **Part II: Method Justification**

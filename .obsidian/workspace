@@ -43,6 +43,17 @@
         }
       },
       {
+        "id": "a802c74e8f9da8d3",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "D207.md",
+            "mode": "preview"
+          }
+        }
+      },
+      {
         "id": "e562ec460dab2a8b",
         "type": "leaf",
         "pinned": true,
@@ -109,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "D209 Task 1.md",
+                "file": "D208 Task 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "D209 Task 1.md"
+                "file": "D208 Task 1.md"
               }
             }
           }
@@ -137,17 +148,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e562ec460dab2a8b",
+  "active": "7999b476f21eb086",
   "lastOpenFiles": [
-    "D209 Task 1.md",
-    "D209 Task 2.md",
-    "D208 Task 2.md",
     "D208 Task 1.md",
+    "D208 Task 2.md",
+    "D209 Task 2.md",
+    "D207.md",
+    "D209 Task 1.md",
     "D209 task 2.md",
     "D208 Task1.md",
     "D208 Task2.md",
     "Untitled 1.md",
-    "D209.md",
-    "D206.md"
+    "D209.md"
   ]
 }
