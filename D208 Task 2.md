@@ -16,14 +16,15 @@
 ## B.  Describe logistic regression methods by doing the following:
 
 1.  Summarize the assumptions of a logistic regression model.
-- First, Binary logistic regression requires the dependent variables to be binary and ordinal. 
+- First, Binary logistic regression requires the dependent variables to be binary.
 - The data observations need to be independent of each other. 
 - The independent variables should not have high correlation.
 - The dataset needs to have more than 10 row.
+- Little or no Multi-collinearity among the independent variables.
 2.  Describe the benefits of using the tool(s) you have chosen (i.e., Python, R, or both) in support of various phases of the analysis.
 - The team has chosen python because it is the most used tool for data analysis. It can be combined with SQL if more records need to be used. 
 3.  Explain why logistic regression is an appropriate technique to analyze the research question summarized in Part I.
-- Logistic regression is able to predict binary columns. It is easy to implement coding wise. Most importantly logistic regression has a lower bias than naive bayes that will be used later on the project.
+- Logistic regression is able to predict binary columns. It is easy to implement coding wise. Most importantly logistic regression has a lower bias than naive bayes.
   
 
 # **Part III: Data Preparation**
@@ -37,16 +38,24 @@
 - The Target variable is the churn column. The churn column is 75% No (the customer is still with the company) and 25% Yes (customer churn the company). The predictor variable.
 - The predictor variables will help predict the churn column. According to chi-square and ANOVA test the columns have a relationship with the churn column. The other columns that were rejected do not have a relationship with the churn column. Therefore, they will not be used to predict the churn column. 
 3.  Explain the steps used to prepare the data for the analysis, including the annotated code.
-
+- We used Chi-squared and ANOVA for to select the most important features. 
+	- ![[Pasted image 20210525132122.png]]
+	- ![[Pasted image 20210525132154.png]]
+- We then created a new Spreadsheet with only these columns.
+![[Pasted image 20210525132051.png]]
 4.  Generate univariate and bivariate visualizations of the distributions of variables in the cleaned data set. Include the target variable in your bivariate visualizations.
-
-5.  Provide a copy of the prepared data set.
-
-  
+ - ![[Pasted image 20210525132532.png]]
+ - ![[Pasted image 20210525132555.png]]
+ - ![[Pasted image 20210525132603.png]]
+ - ![[Pasted image 20210525132617.png]]
+ - ![[Pasted image 20210525132627.png]]
+- ![[Pasted image 20210525132634.png]]
+-  ![[Pasted image 20210525132656.png]]
+-  ![[Pasted image 20210525132716.png]]
+ 
 
 # **Part IV: Model Comparison and Analysis**
-
-## D.  Compare an initial and a reduced logistic regression model by doing the following:
+ ## D.  Compare an initial and a reduced logistic regression model by doing the following:
 
 1.  Construct an initial logistic regression model from _all_ predictors that were identified in Part C2
 
