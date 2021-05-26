@@ -58,11 +58,11 @@
  ## D.  Compare an initial and a reduced logistic regression model by doing the following:
 
 1.  Construct an initial logistic regression model from _all_ predictors that were identified in Part C2
-
+![[Pasted image 20210526181936.png]]
 2.  Justify a statistically based variable selection procedure and a model evaluation metric to reduce the initial model in a way that aligns with the research question.
-
+- we could eliminate Tenure and bandwidth GB year to eliminate columns correlation. 
 3.  Provide a reduced logistic regression model.
-
+![[Pasted image 20210526193056.png]]
 _Note: The output should include a screenshot of each model._
 
 ## E.  Analyze the data set using your reduced logistic regression model by doing the following:
