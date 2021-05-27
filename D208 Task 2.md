@@ -115,15 +115,7 @@ I would recommend collecting more rows on customers who have to churn the compan
 
 # **Part VI: Demonstration**
 
-## G.  Provide a Panopto video recording that includes _all_ of the following elements: review link
 
-•  a demonstration of the functionality of the code used for the analysis
-
-•  an identification of the version of the programming environment
-
-•  a comparison of the **two** logistic regression models you used in your analysis
-
-•  an interpretation of the coefficients
 
 ## H.  List the web sources used to acquire data or segments of third-party code to support the application. Ensure the web sources are reliable.
 - N/A 
