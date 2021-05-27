@@ -38,10 +38,17 @@
 1.  Describe **one** data preprocessing goal relevant to the prediction method from part A1.
 - The columns with categorical values will be transformed into individuals columns with Pandas function get_dummies. one for yes and zero for no.
 2.  Identify the initial data set variables that you will use to perform the analysis for the prediction question from part A1, and group _each_ variable as continuous or categorical. 
-
+- ![[Pasted image 20210527182853.png]]
+- ![[Pasted image 20210527183020.png]]
 3.  Explain the steps used to prepare the data for the analysis. Identify the code segment for _each_ step.
-
-4.  Provide a copy of the cleaned data set.  
+- ![[Pasted image 20210527184602.png]]
+- For the churn column the yes was replaced with 1 and no was replaced with 0.
+- ![[Pasted image 20210527184741.png]]
+- The categorical variables were divided by yes or no columns 
+- ![[Pasted image 20210527184838.png]]
+- Finally the data was split to 80% percent training and 20% testing.
+- The model score is 89% 
+- ![[Pasted image 20210527185042.png]]
  
 
 # **Part IV: Analysis**
@@ -49,7 +56,7 @@
 ## D.  Perform the data analysis and report on the results by doing the following:
 
 1.  Split the data into training and test data sets and provide the file(s).
-
+✅
 2.  Describe the analysis technique you used to appropriately analyze the data. Include screenshots of the intermediate calculations you performed.
 
 3.  Provide the code used to perform the prediction analysis from part D2.  
