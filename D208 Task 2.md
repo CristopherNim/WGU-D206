@@ -68,17 +68,23 @@ _Note: The output should include a screenshot of each model._
 ## E.  Analyze the data set using your reduced logistic regression model by doing the following:
 
 1.  Explain your data analysis process by comparing the initial and reduced logistic regression models, including the following elements:
+- The initial model had an accuracy of 90% and the reduced model had a 65%.
+
 
 	•  the logic of the variable selection technique
-
+		- I selected the model based off the ANOVA test and chi-squared test.
+		- I decided to remove bandwidth and tenure for the reduced model since the two columns had correlation.
+		
 	•  the model evaluation metric
+	- The metric for the two models was mean accuracy. 
 
 2.  Provide the output and _any_ calculations of the analysis you performed, including a confusion matrix.
+##### regular model 
+![[Pasted image 20210526195320.png]]
+##### reduced model
+![[Pasted image 20210526195355.png]]
 
 _Note: The output should include the predictions from the refined model you used to perform the analysis._ 
-
-3.  Provide the code used to support the implementation of the logistic regression models.
-
   
 
 # **Part V: Data Summary and Implications**
@@ -88,6 +94,7 @@ _Note: The output should include the predictions from the refined model you used
 1.  Discuss the results of your data analysis, including the following elements:
 
 	•  a regression equation for the reduced model
+		![[Pasted image 20210526195925.png]]
 
 	•  an interpretation of coefficients of the statistically significant variables of the model
 
