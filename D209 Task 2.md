@@ -4,32 +4,26 @@
 ## .  Describe the purpose of this data mining report by doing the following:
 
 1.  Propose **one** question relevant to a real-world organizational situation that you will answer using **one** of the following prediction methods:
-	1.  The Telecommunication company is looking to identify which customers are more likely to churn. The company wants to increase its retention rate because it cost them ten times more to acquire customers than to retain an existing customer. I am going to use random forest algorithm to predict the churn column. 
+- The Telecommunication company is looking to identify which customers are more likely to churn. The company wants to increase its retention rate because it cost them ten times more to acquire customers than to retain an existing customer. The goal of the model is to predict the amount of customers who are going to churn the company.
 
-	•  decision trees
-
-	•  random forests
-
-	•  advanced regression (i.e., lasso or ridge regression)
 
 2.  Define **one** goal of the data analysis. Ensure that your goal is reasonable within the scope of the scenario and is represented in the available data.  
-- The goal of the data analysis is to predict the churn column at a 80 percent accuracy.
- 
+- The goal of the data analysis is to predict the churn column at an 80 percent accuracy.
 
 # **Part II: Method Justification**
 
 ## B.  Explain the reasons for your chosen prediction method from part A1 by doing the following:
 
 1.  Explain how the prediction method you chose analyzes the selected data set. Include expected outcomes.
-- The prediction method chosen is Random Forest(RF). RF works like if, else statements. If it meets certain conditions then the statement might be true else it false. It creates various trees to meet all the conditions. The trees protect each other from individual errors. The way trees protect each other from making errors is that the trees have low correlation
+- The prediction method chosen is Random Forest(RF). RF works like if, else statements. If it meets certain conditions, then the statement might be true else is false. It creates various trees to meet all the conditions. The trees protect each other from individual errors. The way trees protect each other from making errors is that the trees have a low correlation
 - ![[Pasted image 20210527175835.png]]
 3.  Summarize **one** assumption of the chosen prediction method.
-- Usually there is no assumption on Random Forest. The only assumption is that it has a binary split. 
+- Usually, there is no assumption on Random Forest. The only assumption is that it has a binary split. 
 4.  List the packages or libraries you have chosen for Python or R, and justify how _each_ item on the list supports the analysis.  
 - Numpy - Numpy contains statistical functions.
-- pandas - creates the data frame and allow data manipulation.
+- pandas - create the data frame and allow data manipulation.
  - sklearn - it contains the random forest algorithm function.
- - seaborn and matplotlib libaries will allow us to make visualizations. 
+ - seaborn and matplotlib libraries will allow us to make visualizations. 
 
 # **Part III: Data Preparation**
 
@@ -73,28 +67,23 @@
 ## E.  Summarize your data analysis by doing the following:
 
 1.  Explain the accuracy and the mean squared error (MSE) of your prediction model.
-- The first row in the array the column has 99% of being 0 and 1% percent chance of being 1. The second value has 39% chance 0 and 61 % of being yes. This is how the algorithm predicts its probabilities(mean accuracy).
+- The first row in the array column has a 99% of being 0 and a 1% percent chance of being 1. The second value has a 39% chance 0 and 61 % of being yes. The algorithm uses mean accuracy.
 ![[Pasted image 20210527201448.png]]
 ###### MSE
 ![[Pasted image 20210527202054.png]]
 - MSE is telling us that our model is 90 accurate(10.9% inaccurate)
 2.  Discuss the results and implications of your prediction analysis.
--![[Pasted image 20210527203558.png]]
-- The model accuracy for 
+![[Pasted image 20210527203928.png]]
+- It predicted correctly that 1364 customers were not going to churn
+- The model predicted that 92 customers were staying with the company when they churned the company. 
+- The model predicted incorrectly that 126 customers were going to churn. 
+- The model predicted correctly that 418 were going to churn the company.
 3.  Discuss **one** limitation of your data analysis.
-
+ - The Main limitation for random forest classifier that if it has a large number of trees, the algorithm is slow and ineffective for right away use. Waiting to get the results might cost the company money and delay action to prevent the customer from churning. 
 4.  Recommend a course of action for the real-world organizational situation from part A1 based on your results and implications discussed in part E2.  
- 
+ - Based on the model, we can theorize that out of 2000 customers, the model will predict that 400(20%) customers will churn and have 10% percent inaccuracy. The telecommunications company can try to prevent those 400 customers from churning by offering some incentive to stay. 
 
-# **Part VI: Demonstration**
 
-## F.  Provide a Panopto video recording that includes a demonstration of the functionality of the code used for the analysis and a summary of the programming environment.
-
-## G.  Record the web sources used to acquire data or segments of third-party code to support the analysis. Ensure the web sources are reliable.  
- 
-https://towardsdatascience.com/understanding-random-forest-58381e0602d2
 
 ## H.  Acknowledge sources, using in-text citations and references, for content that is quoted, paraphrased, or summarized.  
- 
-
-## I.  Demonstrate professional communication in the content and presentation of your submission.
+ N/A
