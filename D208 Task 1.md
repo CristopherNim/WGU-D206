@@ -35,23 +35,46 @@
 	- The categorical features are going to be turned into numbers with the pandas library functions. The pd.get_dummies functions will turn the columns into numeric from 1 = no and 1 =yes. 
 	- The numeric columns will be tested to make sure they have a normal distribution.
 2.  Discuss the summary statistics, including the target variable and _all_ predictor variables that you will need to gather from the data set to answer the research question.
+- ![[Pasted image 20210528183338.png]]
+- ![[Pasted image 20210528183349.png]]
+- The numeric features follow a normal distribution (bell curve).
+- ![[Pasted image 20210528183428.png]]
+- ![[Pasted image 20210528183436.png]]
+- ![[Pasted image 20210528183447.png]]
+- ![[Pasted image 20210528183501.png]]
+- ![[Pasted image 20210528183510.png]]
+- ![[Pasted image 20210528183518.png]]
+- Techie, Churn, Gender contract, and phone are the only columns that are not balance well. 
 
 3.  Explain the steps used to prepare the data for the analysis, including the annotated code.
-
+- The only step to prepare the data is to turn the categorical columns into numeric as stated above. 
+![[Pasted image 20210528184030.png]]
 4.  Generate univariate and bivariate visualizations of the distributions of variables in the cleaned data set. Include the target variable in your bivariate visualizations.
-
+- ![[Pasted image 20210525132532.png]]
+ - ![[Pasted image 20210525132555.png]]
+ - ![[Pasted image 20210525132603.png]]
+ - ![[Pasted image 20210525132617.png]]
+ - ![[Pasted image 20210525132627.png]]
+- ![[Pasted image 20210525132634.png]]
+-  ![[Pasted image 20210525132656.png]]
+-  ![[Pasted image 20210525132716.png]]
 5.  Provide a copy of the prepared data set.
-
+✅️
 # **Part IV: Model Comparison and Analysis**
 
 ## D.  Compare an initial and a reduced multiple regression model by doing the following:
 
 1.  Construct an initial multiple regression model from _all_ predictors that were identified in Part C2.
-
+- ![[Pasted image 20210528185224.png]]
 2.  Justify a statistically based variable selection procedure and a model evaluation metric to reduce the initial model in a way that aligns with the research question.
-
-3.  Provide a reduced multiple regression model that includes _both_ categorical and continuous variables.
-
+- ![[Pasted image 20210528185901.png]]
+- In order to reduce the model we first need to identify the import factors that most affect the outcome. The coefficient let's us visualize the important features.
+- The columns that have little impact on the outcome are:
+	- Bandwidth GB per year
+	- Phone
+	- Techie 
+1.  Provide a reduced multiple regression model that includes _both_ categorical and continuous variables.
+- we will remove Bandwidth GB per year, Phone and techie.
   
 
 _Note: The output should include a screenshot of each model._
