@@ -58,18 +58,29 @@
 1.  Split the data into training and test data sets and provide the file(s).
 ✅
 2.  Describe the analysis technique you used to appropriately analyze the data. Include screenshots of the intermediate calculations you performed.
-
-3.  Provide the code used to perform the prediction analysis from part D2.  
- 
+- Chi-square test for relationship between categorical columns.
+- ![[Pasted image 20210527200433.png]]
+- The ANOVA test for relationship between churn and continuous columns 
+- ![[Pasted image 20210527200547.png]] 
+- ![[Pasted image 20210527200645.png]]
+- ![[Pasted image 20210527200702.png]]
+- ![[Pasted image 20210527200714.png]]
+4.  Provide the code used to perform the prediction analysis from part D2.  
+ ✅ EDA
 
 # *Part V: Data Summary and Implications**
 
 ## E.  Summarize your data analysis by doing the following:
 
 1.  Explain the accuracy and the mean squared error (MSE) of your prediction model.
-
+- The first row in the array the column has 99% of being 0 and 1% percent chance of being 1. The second value has 39% chance 0 and 61 % of being yes. This is how the algorithm predicts its probabilities(mean accuracy).
+![[Pasted image 20210527201448.png]]
+###### MSE
+![[Pasted image 20210527202054.png]]
+- MSE is telling us that our model is 90 accurate(10.9% inaccurate)
 2.  Discuss the results and implications of your prediction analysis.
-
+-![[Pasted image 20210527203558.png]]
+- The model accuracy for 
 3.  Discuss **one** limitation of your data analysis.
 
 4.  Recommend a course of action for the real-world organizational situation from part A1 based on your results and implications discussed in part E2.  
