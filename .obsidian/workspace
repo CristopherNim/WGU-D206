@@ -4,26 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "e562ec460dab2a8b",
-        "type": "leaf",
-        "pinned": true,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "D209 Task 1.md",
-            "mode": "source"
-          },
-          "pinned": true
-        }
-      },
-      {
-        "id": "2964a71ad5dccb5f",
+        "id": "494eb26ee2ebb087",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "D209 Task 2.md",
-            "mode": "source"
+            "file": "D206.md",
+            "mode": "preview"
           }
         }
       }
@@ -81,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "D209 Task 1.md",
+                "file": "D206.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "D209 Task 1.md"
+                "file": "D206.md"
               }
             }
           }
@@ -109,17 +96,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e562ec460dab2a8b",
+  "active": "494eb26ee2ebb087",
   "lastOpenFiles": [
-    "D209 Task 1.md",
-    "D209 Task 2.md",
-    "Pasted image 20210527183020.png",
-    "D208 Task 2.md",
     "D206.md",
     "D208 Task 1.md",
+    "D208 Task 2.md",
+    "D209 Task 1.md",
+    "Pasted image 20210528164245.png",
+    "D209 Task 2.md",
+    "Pasted image 20210527183020.png",
     "D207.md",
     "D209 task 2.md",
-    "D208 Task1.md",
-    "D208 Task2.md"
+    "D208 Task1.md"
   ]
 }

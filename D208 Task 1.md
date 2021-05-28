@@ -5,26 +5,35 @@
 
 ## A.  Describe the purpose of this data analysis by doing the following:
 1.  Summarize **one** research question that is relevant to a real-world organizational situation captured in the data set you have selected and that you will answer using multiple regression.
-- The Telecommunication has a theory that the customers who churn have a higher monthly charge than those customers who do not churn
-
+- The telecommunication company wants to know if the features on the data can predict the tenure of the customer. 
 2.  Define the objectives or goals of the data analysis. Ensure that your objectives or goals are reasonable within the scope of the data dictionary and are represented in the available data.
-- The data analysis is going to build a model to predict the monthly charge of each customers. Then the team will build a model to predict the churn column. (Task 2)
+- The goal of the model is to be off by no more than 5 months.
+- see what features impact the tenure column the most.  
 
 # **Part II: Method Justification**
 
 ## B.  Describe multiple regression methods by doing the following:
 1.  Summarize the assumptions of a multiple regression model.
-
+- All numeric variables follow a normal distribution (bell curve).
+- data is homoscedastic. 
+- there is almost no autocorrelation. 
+- very little or no Multicollinearity.
 2.  Describe the benefits of using the tool(s) you have chosen (i.e., Python, R, or both) in support of various phases of the analysis.
-
-3.  Explain why multiple regression is an appropriate technique to analyze the research question summarized in Part I.
-
+- python has various libraries that make it easy to implement the multiple linear regression model. 
+	- Numpy - contains statistical functions.
+	- pandas - create the data frame and allow data manipulation.
+	- sklearn -  Contains the Naive Bayes algorithm function.
+	- seaborn and matplotlib libraries will allow us to make visualizations. 
+-  Explain why multiple regression is an appropriate technique to analyze the research question summarized in Part I.
+- Linear regression is an algorithm that uses two or more features to predict a numeric feature. It is easy to implement and understand. in addition, our features have normal distribution making it likely that the model will have a high accuracy. 
   
 
 # **Part III: Data Preparation**
 ## C.  Summarize the data preparation process for multiple regression analysis by doing the following:
 1.  Describe your data preparation goals and the data manipulations that will be used to achieve the goals.
-
+- Goals:
+	- The categorical features are going to be turned into numbers with the pandas library functions. The pd.get_dummies functions will turn the columns into numeric from 1 = no and 1 =yes. 
+	- The numeric columns will be tested to make sure they have a normal distribution.
 2.  Discuss the summary statistics, including the target variable and _all_ predictor variables that you will need to gather from the data set to answer the research question.
 
 3.  Explain the steps used to prepare the data for the analysis, including the annotated code.
@@ -91,12 +100,5 @@ _Note: The output should include the predictions from the refined model you used
 
 •  an interpretation of the coefficients.
 
-## H.  List the web sources used to acquire data or segments of third-party code to support the application. Ensure the web sources are reliable.
-
-  
 
 ## I.  Acknowledge sources, using in-text citations and references, for content that is quoted, paraphrased, or summarized.
-
-  
-
-## J.  Demonstrate professional communication in the content and presentation of your submission.

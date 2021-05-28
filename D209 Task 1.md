@@ -32,9 +32,9 @@
 
 ## C.  Perform data preparation for the chosen data set by doing the following:
 
-1.  Describe **one** data preprocessing goal relevant to the classification method from part A1.
+Describe **one** data preprocessing goal relevant to the classification method from part A1.
 - The columns with categorical values will be transformed into individuals columns with Pandas function get_dummies. one for yes and zero for no.
-2.  Identify the initial data set variables that you will use to perform the analysis for the classification question from part A1, and classify _each_ variable as continuous or categorical.
+2.  Identify the initial data set variables that you will use to analyze the classification question from part A1, and classify _each_ variable as continuous or categorical.
 - ![[Pasted image 20210527182853.png]]
 - ![[Pasted image 20210527183020.png]]
 3.  Explain _each_ of the steps used to prepare the data for the analysis. Identify the code segment for _each_ step.
@@ -53,36 +53,34 @@
 
 1.  Split the data into training and test data sets and provide the file(s).
 - ![[Pasted image 20210528162855.png]]
-2.  Describe the analysis technique you used to appropriately analyze the data. Include screenshots of the intermediate calculations you performed.
+2.  Describe the analysis technique you used to analyze the data appropriately. Include screenshots of the intermediate calculations you performed.
 - ![[Pasted image 20210528163606.png]]
 - ![[Pasted image 20210528163618.png]]
 - ![[Pasted image 20210528163626.png]]
 - The accuracy score is 89.6% accurate
-- The model mislabeled 208 rows in the churn column based on the customers information. 
-- The model has a high true positive rate meaning it has a high accuracy. 
+- The model mislabeled 208 rows in the churn column based on the customer's information. 
+- The model has a high true positive rate meaning it has high accuracy. 
 3.  Provide the code used to perform the classification analysis from part D2.  
  ☑️
 
 # **Part V: Data Summary and Implications**
 
 ## E.  Summarize your data analysis by doing the following:
-
 1.  Explain the accuracy and the area under the curve (AUC) of your classification model.
 - The model has an accuracy rate of 89.6%
 - ![[Pasted image 20210528164245.png]]
-- The model Area under the curve is 87%. Meaning that is labeling the right label 87% of the time.
+- The model Area under the curve is 87%. Meaning that is labeling the correct label 87% of the time.
 2.  Discuss the results and implications of your classification analysis.
 - ![[Pasted image 20210528164645.png]]
-- Out of 2000 rows the model:
+- Out of 2000 rows, the model:
 	- The model is labeling 111 false negatives (meaning the labeled should be 1=yes)
 	- the model labeled 97 false positives (meaning the labeled should be 0=no)
 	- labeled 1765 correct labels 
 3.  Discuss **one** limitation of your data analysis.
- - The main limitation as stated above is that the Naive Bayes assumes independent predictors.  Tenure and Monthly charge some correlation. In real world data it is hard to find sets (columns) of data that do not have correlation to the prediction column. 
- - Another limitation is that it assumes that all columns have normal distribution. 
+ - The main limitation, as stated above, is that the Naive Bayes assumes independent predictors.  Tenure and Monthly charge some correlation. It is hard to find sets (columns) of data in actual-world data that do not correlate with the prediction column. 
+ - Another limitation is that it assumes that all columns have a normal distribution. 
 4.  Recommend a course of action for the real-world organizational situation from part A1 based on your results and implications discussed in part E2.  
- - My recommendation based on the model is that we should look for another model that has a lower false negative rate. Those are 111 customers that could be lost and cost the company to lose revenue. 
-# **Part VI: Demonstration** Review link
+ - My recommendation based on the model is that we should look for another model with a lower false-negative rate. Those are 111 customers that could be lost and cost the company to lose revenue. 
 
 ## H  Acknowledge sources, using in-text citations and references, for content that is quoted, paraphrased, or summarized.
 N/A
