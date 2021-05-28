@@ -15,6 +15,17 @@
           },
           "pinned": true
         }
+      },
+      {
+        "id": "2964a71ad5dccb5f",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "D209 Task 2.md",
+            "mode": "preview"
+          }
+        }
       }
     ],
     "direction": "vertical"
