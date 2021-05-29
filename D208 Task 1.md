@@ -5,7 +5,7 @@
 
 ## A.  Describe the purpose of this data analysis by doing the following:
 1.  Summarize **one** research question that is relevant to a real-world organizational situation captured in the data set you have selected and that you will answer using multiple regression.
-- The telecommunication company wants to know if the features on the data can predict the tenure of the customer. 
+- The telecommunication company wants to know if the features on the data can predict the tenure of the customer.  If the company is able to predict the tenure the company can have a good idea how long each customer will stay with the company before churning.
 2.  Define the objectives or goals of the data analysis. Ensure that your objectives or goals are reasonable within the scope of the data dictionary and are represented in the available data.
 - The goal of the model is to be off by no more than 5 months.
 - see what features impact the tenure column the most.  
@@ -68,7 +68,7 @@
 - ![[Pasted image 20210528185224.png]]
 2.  Justify a statistically based variable selection procedure and a model evaluation metric to reduce the initial model in a way that aligns with the research question.
 - ![[Pasted image 20210528185901.png]]
-- In order to reduce the model we first need to identify the import factors that most affect the outcome. The coefficient let's us visualize the important features.
+- In order to reduce the model we first need to identify the import factors that most affect the outcome. øThe coefficient let's us visualize the important features.
 - The columns that have little impact on the outcome are:
 	- Bandwidth GB per year
 	- Phone
@@ -89,9 +89,10 @@ _Note: The output should include a screenshot of each model._
 - The logic of the variables selection were based off the coefficients visualization. 
 - The model evaluation metric is based off how close the prediction is to the churn column. The original model is off by +- ~2 while the reduced model is off by +- ~30.
 -  a residual plot
-
-2.  Provide the output and _any_ calculations of the analysis you performed, including the model’s residual error.
-_Note: The output should include the predictions from the refined model you used to perform the analysis._ 
+![[Pasted image 20210528204126.png]]
+- from the visualization of the residual plot we can conclude for the most part that the model is accurate.  
+- Where the model is making errors is when is predicting 10-20 months of tenure.  
+- From Q-Q plot we can conclude that the prediction is missing points from the right side of the normal distribution. 
 
 3.  Provide the code used to support the implementation of the multiple regression models.
 ✅️
@@ -102,16 +103,19 @@ _Note: The output should include the predictions from the refined model you used
 
 1.  Discuss the results of your data analysis, including the following elements:
 
-	•  a regression equation for the reduced model
-
-	•  an interpretation of coefficients of the statistically significant variables of the model
-
-	•  the statistical and practical significance of the model
-
-	•  the limitations of the data analysis
+- a regression equation for the reduced model
+- [ ] 
+- an interpretation of coefficients of the statistically significant variables of the model
+	- ![[Pasted image 20210528185901.png]]
+	- For example, if the person has internet service DSL the prediction number is below the actual number. 
+	- If it has a positive coefficient the model will predict tenure number above the actual correct tenure number.
+- the statistical and practical significance of the model
+	- From the statistical data we can conclude Bandwidth, phone and tenure have a correlation to tenure column. 
+- the limitations of the data analysis
+- The limitation of linear models is that it assumes there is a straight line. The tenure column does a have a normal distribution, but the data needs to be resampled to be turned into a normal curve. In addition multiple regression is sensitive to outliers meaning in order for the model to remain accurate we would need to clean the data often.
 
 2.  Recommend a course of action based on your results.
-
+ - My recommendation that if we want to predict the tenure feature the model will give us a good outlook on how long we can expect the customer to stay with the company. With this information we can customers incentives to stay when the predicted tenure is close to the predicted rate to increase retention.
   
 
 #  **Part VI: Demonstration ==Review link== ** 
