@@ -75,23 +75,26 @@
 	- Techie 
 1.  Provide a reduced multiple regression model that includes _both_ categorical and continuous variables.
 - we will remove Bandwidth GB per year, Phone and techie.
+- ![[Pasted image 20210528192705.png]]
   
 
 _Note: The output should include a screenshot of each model._
 
 ## E.  Analyze the data set using your reduced multiple regression model by doing the following:
 1.  Explain your data analysis process by comparing the initial and reduced multiple regression models, including the following elements:
-	•  the logic of the variable selection technique
-
-	•  the model evaluation metric
-
-	•  a residual plot
+- ![[Pasted image 20210528195045.png]]
+- From the table you can deduct that the original model is the more accurate one just by looking at the first 9 rows. The columns removed were pivotal to predicting the Tenure column. 
+- ![[Pasted image 20210528195416.png]]
+- The median from the columns let's us know that the original model is the more accurate of the two models.
+- The logic of the variables selection were based off the coefficients visualization. 
+- The model evaluation metric is based off how close the prediction is to the churn column. The original model is off by +- ~2 while the reduced model is off by +- ~30.
+-  a residual plot
 
 2.  Provide the output and _any_ calculations of the analysis you performed, including the model’s residual error.
 _Note: The output should include the predictions from the refined model you used to perform the analysis._ 
 
 3.  Provide the code used to support the implementation of the multiple regression models.
-
+✅️
  
 # **Part V: Data Summary and Implications**
 
