@@ -5,11 +5,10 @@
 
 ## A.  Describe the purpose of this data analysis by doing the following:
 1.  Summarize **one** research question that is relevant to a real-world organizational situation captured in the data set you have selected and that you will answer using multiple regression.
-- The telecommunication company wants to know if the features on the data can predict the tenure of the customer.  If the company is able to predict the tenure the company can have a good idea how long each customer will stay with the company before churning.
+The telecommunication company wants to know if the data features can predict the customer's tenure.  If the company can expect tenure, the company can have a good idea of how long each customer will stay with the company before churning.
 2.  Define the objectives or goals of the data analysis. Ensure that your objectives or goals are reasonable within the scope of the data dictionary and are represented in the available data.
-- The goal of the model is to be off by no more than 5 months.
+- The goal of the model is to be off by no more than five months.
 - see what features impact the tenure column the most.  
-
 # **Part II: Method Justification**
 
 ## B.  Describe multiple regression methods by doing the following:
@@ -25,7 +24,7 @@
 	- sklearn -  Contains the Naive Bayes algorithm function.
 	- seaborn and matplotlib libraries will allow us to make visualizations. 
 -  Explain why multiple regression is an appropriate technique to analyze the research question summarized in Part I.
-- Linear regression is an algorithm that uses two or more features to predict a numeric feature. It is easy to implement and understand. in addition, our features have normal distribution making it likely that the model will have a high accuracy. 
+- Linear regression is an algorithm that uses two or more features to predict a numeric feature. It is easy to implement and understand. in addition, our features have normal distribution making it likely that the model will have high accuracy. 
   
 
 # **Part III: Data Preparation**
@@ -34,7 +33,7 @@
 - Goals:
 	- The categorical features are going to be turned into numbers with the pandas library functions. The pd.get_dummies functions will turn the columns into numeric from 1 = no and 1 =yes. 
 	- The numeric columns will be tested to make sure they have a normal distribution.
-2.  Discuss the summary statistics, including the target variable and _all_ predictor variables that you will need to gather from the data set to answer the research question.
+2.  Discuss the summary statistics, including the target variable and _all_ predictor variables that you will need to gather from the data set to answer the research question. 
 - ![[Pasted image 20210528183338.png]]
 - ![[Pasted image 20210528183349.png]]
 - The numeric features follow a normal distribution (bell curve).
@@ -64,17 +63,17 @@
 
 ## D.  Compare an initial and a reduced multiple regression model by doing the following:
 
-1.  Construct an initial multiple regression model from _all_ predictors that were identified in Part C2.
+1.  Construct an initial multiple regression model from _all_ predictors identified in Part C2.
 - ![[Pasted image 20210528185224.png]]
 2.  Justify a statistically based variable selection procedure and a model evaluation metric to reduce the initial model in a way that aligns with the research question.
 - ![[Pasted image 20210528185901.png]]
-- In order to reduce the model we first need to identify the import factors that most affect the outcome. øThe coefficient let's us visualize the important features.
-- The columns that have little impact on the outcome are:
+To reduce the model, we first need to identify the critical factors that most affect the outcome. The coefficient lets us visualize the important features.
+- The columns that have little impact on the outcome are(theory):
 	- Bandwidth GB per year
 	- Phone
 	- Techie 
 1.  Provide a reduced multiple regression model that includes _both_ categorical and continuous variables.
-- we will remove Bandwidth GB per year, Phone and techie.
+- we will remove Bandwidth GB per year, Phone, and techie.
 - ![[Pasted image 20210528192705.png]]
   
 
@@ -83,16 +82,16 @@ _Note: The output should include a screenshot of each model._
 ## E.  Analyze the data set using your reduced multiple regression model by doing the following:
 1.  Explain your data analysis process by comparing the initial and reduced multiple regression models, including the following elements:
 - ![[Pasted image 20210528195045.png]]
-- From the table you can deduct that the original model is the more accurate one just by looking at the first 9 rows. The columns removed were pivotal to predicting the Tenure column. 
+- From the table, you can deduct that the original model is the more accurate one just by looking at the first nine rows. The columns removed were pivotal to predicting the Tenure column. 
 - ![[Pasted image 20210528195416.png]]
-- The median from the columns let's us know that the original model is the more accurate of the two models.
-- The logic of the variables selection were based off the coefficients visualization. 
-- The model evaluation metric is based off how close the prediction is to the churn column. The original model is off by +- ~2 while the reduced model is off by +- ~30.
+- The median from the columns lets us know that the original model is the more accurate of the two models.
+- The logic of the variables selection was based on the coefficients visualization. 
+- The model evaluation metric is based on how close the prediction is to the churn column. The original model is off by +- ~2, while the reduced model is off by +- ~30.
 -  a residual plot
 ![[Pasted image 20210528204126.png]]
-- from the visualization of the residual plot we can conclude for the most part that the model is accurate.  
-- Where the model is making errors is when is predicting 10-20 months of tenure.  
-- From Q-Q plot we can conclude that the prediction is missing points from the right side of the normal distribution. 
+- from the visualization of the residual plot, we can conclude, for the most part, that the model is accurate.  
+- Where the model is making errors is when it is predicting 10-20 months of tenure.  
+- From the Q-Q plot, we can conclude that the prediction is missing points from the right side of the normal distribution. 
 
 3.  Provide the code used to support the implementation of the multiple regression models.
 ✅️
@@ -102,33 +101,28 @@ _Note: The output should include a screenshot of each model._
 ## F.  Summarize your findings and assumptions by doing the following:
 
 1.  Discuss the results of your data analysis, including the following elements:
-
+ - based on our theory that Bandwidth, phone, techie were not essential features to predict tenure column. We can conclude that we were wrong and should include this column to indicate the tenure column. 
 - a regression equation for the reduced model
-- [ ] 
+Y = linear_line + col_A + Col_B.... + col_Z
+![[Pasted image 20210528215051.png]]
 - an interpretation of coefficients of the statistically significant variables of the model
 	- ![[Pasted image 20210528185901.png]]
-	- For example, if the person has internet service DSL the prediction number is below the actual number. 
-	- If it has a positive coefficient the model will predict tenure number above the actual correct tenure number.
+	- For example, if the person has internet service DSL, the prediction number is below the actual number. 
+	- If it has a positive coefficient, the model will predict tenure number above the actual correct tenure number.
 - the statistical and practical significance of the model
-	- From the statistical data we can conclude Bandwidth, phone and tenure have a correlation to tenure column. 
+	- From the statistical data, we can conclude Bandwidth, phone, and tenure correlate to the tenure column. 
 - the limitations of the data analysis
-- The limitation of linear models is that it assumes there is a straight line. The tenure column does a have a normal distribution, but the data needs to be resampled to be turned into a normal curve. In addition multiple regression is sensitive to outliers meaning in order for the model to remain accurate we would need to clean the data often.
+- The limitation of linear models is that it assumes there is a straight line. The tenure column has a normal distribution, but the data must be resampled to be turned into a normal curve. In addition, multiple regression is sensitive to outliers meaning for the model to remain accurate, we would need to clean the data often.
+- In addition, not all the features are well balanced. Meaning if we enter data to balance out the data, the predictions might not be accurate.
 
 2.  Recommend a course of action based on your results.
- - My recommendation that if we want to predict the tenure feature the model will give us a good outlook on how long we can expect the customer to stay with the company. With this information we can customers incentives to stay when the predicted tenure is close to the predicted rate to increase retention.
+ - My recommendation that if we want to predict the tenure feature, the model will give us a good outlook on how long we can expect the customer to stay with the company. With this information, we can offer customers incentives to stay when the predicted tenure is close to the predicted rate to increase retention.
   
 
-#  **Part VI: Demonstration ==Review link== ** 
 
-## G.  Provide a Panopto video recording that includes _all_ of the following elements:
-
-•  a demonstration of the functionality of the code used for the analysis
-
-•  an identification of the version of the programming environment
-
-•  a comparison of the **two** multiple regression models you used in your analysis
-
-•  an interpretation of the coefficients.
-
+H.  List the web sources used to acquire data or segments of third-party code to support the application. Ensure the web sources are reliable.
+N/A did not used any 
 
 ## I.  Acknowledge sources, using in-text citations and references, for content that is quoted, paraphrased, or summarized.
+
+N/A did not used any
