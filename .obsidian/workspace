@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "D210.md",
-            "mode": "source"
+            "file": "D208 Task 2.md",
+            "mode": "preview"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "D210.md",
+                "file": "D208 Task 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "D210.md"
+                "file": "D208 Task 2.md"
               }
             }
           }
@@ -98,13 +98,13 @@
   },
   "active": "494eb26ee2ebb087",
   "lastOpenFiles": [
+    "D208 Task 2.md",
     "D210.md",
     "D206.md",
     "Untitled.md",
     "D208 Task 1.md",
     "D209 Task 2.md",
     "Pasted image 20210528195045.png",
-    "D208 Task 2.md",
     "D209 Task 1.md",
     "Pasted image 20210528164245.png",
     "Pasted image 20210527183020.png"
