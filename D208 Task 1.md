@@ -66,27 +66,24 @@ The telecommunication company wants to know if the data features can predict the
 1.  Construct an initial multiple regression model from _all_ predictors identified in Part C2.
 - ![[Pasted image 20210528185224.png]]
 2.  Justify a statistically based variable selection procedure and a model evaluation metric to reduce the initial model in a way that aligns with the research question.
-- ![[Pasted image 20210528185901.png]]
-To reduce the model, we first need to identify the critical factors that most affect the outcome. The coefficient lets us visualize the important features.
-- The columns that have little impact on the outcome are(theory):
-	- Bandwidth GB per year
-	- Phone
-	- Techie 
-1.  Provide a reduced multiple regression model that includes _both_ categorical and continuous variables.
-- we will remove Bandwidth GB per year, Phone, and techie.
-- ![[Pasted image 20210528192705.png]]
-  
-
+![[Pasted image 20210531171635.png]]
+The Kendall method is a good way for feature extraction. It assumes one feature is categorical and the other numeric. Since the feature we are trying to predict is numeric, we will only look at categorical features. From the image above, we see that Phone, multiple, streaming tv, and streaming movies have a low correlation to tenure. For this reason, we are going to remove those features and make a prediction. 
+3.  Provide a reduced multiple regression model that includes _both_ categorical and continuous variables.
+![[Pasted image 20210531172344.png]]
+The Image above provides categorical and continuous features. 
+![[Pasted image 20210531172355.png]]
+The Image above provides the output for the reduced model along with the score.
 _Note: The output should include a screenshot of each model._
 
 ## E.  Analyze the data set using your reduced multiple regression model by doing the following:
 1.  Explain your data analysis process by comparing the initial and reduced multiple regression models, including the following elements:
-- ![[Pasted image 20210528195045.png]]
-- From the table, you can deduct that the original model is the more accurate one just by looking at the first nine rows. The columns removed were pivotal to predicting the Tenure column. 
-- ![[Pasted image 20210528195416.png]]
-- The median from the columns lets us know that the original model is the more accurate of the two models.
-- The logic of the variables selection was based on the coefficients visualization. 
-- The model evaluation metric is based on how close the prediction is to the churn column. The original model is off by +- ~2, while the reduced model is off by +- ~30.
+![[Pasted image 20210531172758.png]]
+![[Pasted image 20210531172814.png]]
+The model that was not reduced has a strong correlation with the actual scores of tenure. At the same time, the reduced model has a weak correlation with the actual scores of the tenure features. 
+![[Pasted image 20210531172958.png]]
+The reduced model is a hit or miss when it comes to predicting the actual model scores. In addition, you can see from the table that the first model overall has a reasonable prediction rate. 
+
+- The model evaluation metric is based on how close the prediction is to the churn column. The original model is off by +- ~2, while the reduced model is off by +- ~30 or +- ~2.
 -  a residual plot
 ![[Pasted image 20210528204126.png]]
 - from the visualization of the residual plot, we can conclude, for the most part, that the model is accurate.  
@@ -101,7 +98,7 @@ _Note: The output should include a screenshot of each model._
 ## F.  Summarize your findings and assumptions by doing the following:
 
 1.  Discuss the results of your data analysis, including the following elements:
- - based on our theory that Bandwidth, phone, techie were not essential features to predict tenure column. We can conclude that we were wrong and should include this column to indicate the tenure column. 
+ - based on our theory thatPhone, multiple, streaming tv, and streaming movies were not essential features to predict tenure column. We can conclude that we were wrong and should include this column to indicate the tenure column. 
 - a regression equation for the reduced model
 Y = linear_line + col_A + Col_B.... + col_Z
 ![[Pasted image 20210528215051.png]]
