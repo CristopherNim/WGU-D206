@@ -24,7 +24,14 @@ The assumption is that joint occurrences of two or more items in most baskets ar
 ### C.  Prepare and perform market basket analysis by doing the following:
 
 1.  Transform the dataset to make it suitable for market basket analysis. Include a copy of the cleaned dataset.
-
+	- The first step is to drop all non transactions in the data.
+	- ![[Pasted image 20210531194343.png]]
+	- ![[Pasted image 20210531194354.png]]
+	- The df.dropna(how='all') removes rows that have all Na values
+	- The next step is to go from a data frame to a list 
+	- ![[Pasted image 20210531194500.png]]
+	- The final step is to remove Na values from the list 
+	- ![[Pasted image 20210531194541.png]]
 2.  Execute the code used to generate association rules with the Apriori algorithm. Provide screenshots that demonstrate the error-free functionality of the code.
 
 3.  Provide values for the support, lift, and confidence of the association rules table.
