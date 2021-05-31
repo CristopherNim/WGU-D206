@@ -2,20 +2,18 @@
 
 ### A.  Describe the purpose of this data mining report by doing the following:
 1.  Propose **one** question relevant to a real-world organizational situation that you will answer using **one** of the following clustering techniques:
+The telecommunication is looking to target customers who will not churn the company. With hierarchical clustering we will be able to identify what customers to pursue. The question is what customers should we target for our current product?
 
-•  _k_-means
-
-•  hierarchical
 
 2.  Define **one** goal of the data analysis. Ensure that your goal is reasonable within the scope of the scenario and is represented in the available data.  
- 
-
+ - The goal of the Data analysis is to identify what customers the company should target using hierarchical clustering. 
+https://www.analyticsvidhya.com/blog/2019/05/beginners-guide-hierarchical-clustering/
 # **Part II: Technique Justification**
 
 ### B.  Explain the reasons for your chosen clustering technique from part A1 by doing the following:
 
 1.  Explain how the clustering technique you chose analyzes the selected dataset. Include expected outcomes.
-
+- clustering technique uses unsupervised learning. The goal at the end project is
 2.  Summarize **one** assumption of the clustering technique.
 
 3.  List the packages or libraries you have chosen for Python or R, and justify how _each_ item on the list supports the analysis.  
