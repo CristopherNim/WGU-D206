@@ -2,12 +2,12 @@
 
 ### A.  Describe the purpose of this data mining report by doing the following:
 1.  Propose **one** question relevant to a real-world organizational situation that you will answer using **one** of the following clustering techniques:
-The telecommunication is looking to target customers who will not churn the company. With hierarchical clustering we will be able to identify what customers to pursue. The question is what customers should we target for our current product?
+Telecommunication is looking to target customers who will not churn the company. With hierarchical clustering, we will be able to identify what customers to pursue. The question is, what customers should we target for our current product?
 
 
 2.  Define **one** goal of the data analysis. Ensure that your goal is reasonable within the scope of the scenario and is represented in the available data.  
- - The goal of the Data analysis is to identify what customers the company should target using hierarchical clustering. 
-https://www.analyticsvidhya.com/blog/2019/05/beginners-guide-hierarchical-clustering/
+ The data analysis aims to identify what customers the company should target using hierarchical clustering. 
+
 # **Part II: Technique Justification**
 
 ### B.  Explain the reasons for your chosen clustering technique from part A1 by doing the following:
@@ -29,19 +29,19 @@ https://www.analyticsvidhya.com/blog/2019/05/beginners-guide-hierarchical-cluste
 ### C.  Perform data preparation for the chosen dataset by doing the following
 
 1.  Describe **one** data preprocessing goal relevant to the clustering technique from part A1.
-- We will turn our categorical columns into 1's and 0's. The pandas function get_dummies will turn the columns into binary. The 1's are for yes = True and the 0's stand for no = False.
+- We will turn our categorical columns into 1's and 0's. The panda's function get_dummies will turn the columns into binary. The 1's are for yes = True, and the 0's stand for no = False.
 
-2.  Identify the initial dataset variables that you will use to perform the analysis for the clustering question from part A1, and label _each_ as continuous or categorical.
+2.  Identify the initial dataset variables that you will use to analyze the clustering question from part A1, and label _each_ as continuous or categorical.
 - ![[Pasted image 20210527182853.png]]
 - ![[Pasted image 20210527183020.png]]
 
 3.  Explain _each_ of the steps used to prepare the data for the analysis. Identify the code segment for _each_ step.
 ![[Pasted image 20210530210617.png]]
-- First we created a loop to grab the numeric features for the dataframe. Then we grab those numeric features and put them into a list. We follow that up and create a new dataframe with only numeric features. Finally we normalize the numeric features and make a new dataframe with the normalize numeric features. 
+- First, we created a loop to grab the numeric features for the data frame. Then we hold those numeric features and put them into a list. We follow that up and create a new data frame with only numeric features. Finally, we normalize the numeric features and make a new data frame with the normalized numeric features. 
 - ![[Pasted image 20210530210956.png]]
-- We do the same for the categorical features, but instead we turn the categorical features into binary columns using the get_dummies function. 
+- We do the same for the categorical features, but instead, we turn the categorical features into binary columns using the get_dummies function. 
 - ![[Pasted image 20210530211057.png]]
-- Lastly we merge the two dataframes back into one using the pandas concat function.
+- Lastly, we merge the two data frames back into one using the pandas Concat function.
 4.  Provide a copy of the cleaned dataset.  
  ✅️
 
@@ -51,22 +51,30 @@ https://www.analyticsvidhya.com/blog/2019/05/beginners-guide-hierarchical-cluste
 
 1.  Split the data into training and test data sets and provide the file(s).
 ✅️
-2.  Describe the analysis technique you used to appropriately analyze the data. Include screenshots of the intermediate calculations you performed.
-
+2.  Describe the analysis technique you used to analyze the data appropriately. Include screenshots of the intermediate calculations you performed.
+![[Pasted image 20210530232423.png]]
+- First, I decided to see how many cluster groups I had in the data using the ward method. We only had two different clusters indicating that our data is cleaned and will provide insightful information. 
+-  ![[Pasted image 20210530232642.png]]
+-  ![[Pasted image 20210530232657.png]]
+-  We can see from the visualization how the two groups differ. The yellow is the customers with churn, and the purple cluster is the group that has not churn. 
 3.  Provide the code used to perform the clustering analysis technique from part 2.  
- 
+ ✅️
 
 # **Part V: Data Summary and Implications**
 
 ### E.  Summarize your data analysis by doing the following:
 
 1.  Explain the accuracy of your clustering technique.
-
+- The cluster technique has a reasonable accuracy rate because the groups have a good separation when looking at the visualizations. 
 2.  Discuss the results and implications of your clustering analysis.
-
+- ![[Pasted image 20210530234116.png]]
+- The results are that if the customer has a tenure of 40, they are likely to stay with the company. If the customer has a bandwidth of above 3600, they are more likely not to churn 
 3.  Discuss **one** limitation of your data analysis.
 
-4.  Recommend a course of action for the real-world organizational situation from part A1 based on your results and implications discussed in part E2.  
+- One of the limitations of our data is that we do not have more numeric features. The lack of numeric features gives us more minor elements to visualize what customers to target as the company tries to increase its customer base. 
+
+4.  Recommend a course of action for the real-world organizational situation from part A1 based on your results and implications discussed in part E2. 
+	1.  My recommendation based on the data and visualization is the company target customers who have used 3600 GB of bandwidth and have a tenure of 40 months. We build a model of prediction Tenure is D208 task 1. This model could be used to predict the term of the company. The company can use a survey to indicate the tenure and go after these customers to expand its customer for the particular product. 
  
 
 # **Part VI: Demonstration**
