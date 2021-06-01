@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "D214/D214_Task_3.md",
-            "mode": "source"
+            "file": "D206, D207, D210/D206.md",
+            "mode": "preview"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "D214/D214_Task_3.md",
+                "file": "D206, D207, D210/D206.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "D214/D214_Task_3.md"
+                "file": "D206, D207, D210/D206.md"
               }
             }
           }
@@ -98,6 +98,7 @@
   },
   "active": "494eb26ee2ebb087",
   "lastOpenFiles": [
+    "D206, D207, D210/D206.md",
     "D214/D214_Task_3.md",
     "D214/Untitled.md",
     "D213/D213_Task_2.md",
@@ -106,7 +107,6 @@
     "D206.md",
     "D212/D212 Task 3.md",
     "D208 Task 2.md",
-    "D208 Task 1.md",
-    "D212/D212  Task 2.md"
+    "D208 Task 1.md"
   ]
 }
