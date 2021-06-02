@@ -70,6 +70,7 @@ Telecommunication is looking to target customers who will not churn the company.
 - The cluster technique has a reasonable accuracy rate because the groups have a good separation when looking at the visualizations. We have two groups of clusters clearly separated. 
 -![[Pasted image 20210602002211.png]]
 - As for labeling the score we have is 60%
+- The Rand index is proportional to the number of sample pairs whose labels are the same in both y_test and y_pred, or are different in both. Perfect labels will give a score of 1.0 (100%)
 2.  Discuss the results and implications of your clustering analysis.
 - ![[Pasted image 20210530234116.png]]
 - The results are that if the customer has a tenure of 40, they are likely to stay with the company. If the customer has a bandwidth of above 3600, they are more likely not to churn 
