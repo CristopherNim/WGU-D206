@@ -88,7 +88,8 @@ _Note: The output should include a screenshot of each model._
 ![[Pasted image 20210526195355.png]]
 
 _Note: The output should include the predictions from the refined model you used to perform the analysis._ 
-  
+  ![[Pasted image 20210602165309.png]]
+  ![[Pasted image 20210602165314.png]]
 
 # **Part V: Data Summary and Implications**
 

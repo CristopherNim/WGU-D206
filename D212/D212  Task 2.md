@@ -35,7 +35,8 @@ The Image above is all the continuous variables in our data set.
 ### D.  Perform PCA by doing the following:
 
 1.  Determine the matrix of _all_ the principal components.
-![[Pasted image 20210531005202.png]]
+![[Pasted image 20210602155022.png]]
+![[Pasted image 20210602155031.png]]
 The above image has all the essential components, and the list below has components attached to each PCA based on the PCA components importance.
 PC0 - Tenure
 PC1 - Outage, Monthly Charge
