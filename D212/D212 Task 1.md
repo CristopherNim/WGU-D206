@@ -14,7 +14,9 @@ Telecommunication is looking to target customers who will not churn the company.
 
 1.  Explain how the clustering technique you chose analyzes the selected dataset. Include expected outcomes.
 - clustering technique uses unsupervised learning. Clustering will divide the data into 2 or more clusters. 
+- After the cluster are identified they are label and assigned to a group.
 - The expected outcome is two have two different groups (clusters). One group will be the group that will churn the company. The other group is the customers that will stay with the company long term.
+- The  Agglomerative Approach separated all the objects in the beginning. Then it keeps on merging until every object has a group.
 2.  Summarize **one** assumption of the clustering technique.
  - There are no assumptions to hierarchical clustering.
  - One assumption we can presume is that there will be two groups of clusters. We will see if this assumption is true after we make the visualizations. 
@@ -64,8 +66,10 @@ Telecommunication is looking to target customers who will not churn the company.
 
 ### E.  Summarize your data analysis by doing the following:
 
-1.  Explain the accuracy of your clustering technique.
-- The cluster technique has a reasonable accuracy rate because the groups have a good separation when looking at the visualizations. 
+1.  **Explain the accuracy** of your clustering technique.
+- The cluster technique has a reasonable accuracy rate because the groups have a good separation when looking at the visualizations. We have two groups of clusters clearly separated. 
+-![[Pasted image 20210602002211.png]]
+- As for labeling the score we have is 60%
 2.  Discuss the results and implications of your clustering analysis.
 - ![[Pasted image 20210530234116.png]]
 - The results are that if the customer has a tenure of 40, they are likely to stay with the company. If the customer has a bandwidth of above 3600, they are more likely not to churn 
