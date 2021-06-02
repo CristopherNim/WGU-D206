@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "D208/D208 Task 2.md",
+            "file": "FIU.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "D208/D208 Task 2.md",
+                "file": "FIU.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "D208/D208 Task 2.md"
+                "file": "FIU.md"
               }
             }
           }
@@ -98,15 +98,15 @@
   },
   "active": "494eb26ee2ebb087",
   "lastOpenFiles": [
+    "FIU.md",
+    "Pasted image 20210602012550.png",
     "D208/D208 Task 2.md",
     "D208/D208 Task 1.md",
-    "FIU.md",
     "D212/D212  Task 2.md",
     "Untitled.md",
     "D212/D212 Task 1.md",
     "D206, D207, D210/D206.md",
     "D206, D207, D210/D207.md",
-    "D206, D207, D210/D210.md",
-    "D209/D209 Task 1.md"
+    "D206, D207, D210/D210.md"
   ]
 }
