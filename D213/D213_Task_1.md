@@ -15,18 +15,39 @@
 	- Stationary assumptions:
 		- that the mean and the variance does not change over time.
 		- The structure does not change over time. 
-		- helps understand trend without having variance anfd
-  
+		- helps understand trend without having variance and variables change over time
+	-  Autocorrelation: 
+		-  The lag between the data and now. Defining it by time units. 
+		-  autocorrelation has residual errors.
+		-  To create the best time series model is to use stationary data, but it should not be the expected outcome.  
 
 # **Part III:  Data Preparation**
 
 ### C.  Summarize the data cleaning process by doing the following:
 
 1.  Provide a line graph visualizing the realization of the time series.
-
+![[Pasted image 20210605155341.png]]
 2.  Describe the time step formatting of the realization, including any gaps in measurement and the length of the sequence.
-
-3.  Evaluate the stationarity of the time series.
+- The revenue feature is used millions.
+	- For example, 2.5 is 2.5 millions
+	- For example, 5 is 5 millions
+- Between day 0 and 90:
+	- The company saw an increase of 0 to 7.5. During that time the company had a lost revenue of 3 to 1.5 millions. During that time we can assume that the company lost some revenue due to churning.
+	- between day 90 to 180 the company experience a lost in revenue of 2.5 millions. 
+		- During that time the company experience inclines follow by declines.
+		- We can theorize that the company experience churning
+	- Between day 180 to 270:
+		- Profit increase to 11 millions
+		- we can assume that the company experience a surge of new customers.]
+	- Between day 270 - 360:
+		- profit increased by one million.
+		- In addition, we can theorize the company experience churning, with new customers joining towards the latter part.
+	- Between day 360 to 610:
+		- The company experience a similar trend between day 270 to 360
+	- Between day 610 to 630:
+		- a profit loss of 4.5 millions. 
+		- We can theorize based on the data that the company experience a lot of cust
+4.  Evaluate the stationarity of the time series.
 
 4.  Explain the steps used to prepare the data for analysis, including the training and test set split.
 
