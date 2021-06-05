@@ -3,13 +3,19 @@
 ### A.  Describe the purpose of this data analysis by doing the following:
 
 1.  Summarize **one** research question that is relevant to a real-world organizational situation captured in the selected data set and that you will answer using time series modeling techniques.
-
+ - The company wants to understand the financial impact churning is having in the current times and in the future.
 2.  Define the objectives or goals of the data analysis. Ensure that your objectives or goals are reasonable within the scope of the scenario and are represented in the available data.  
+- The goal of the data analysis  is to ensure the leaders of the company understand the financial impact that churning is having and how it affects the company moving forward. The objective is to create visualization and machine learning model to predict the churning financial impact. 
   
 
 # **Part II:  Method Justification**
 
 ### B.  Summarize the assumptions of a time series model including stationarity and autocorrelated data.  
+- Assumptions for time series model:
+	- Stationary assumptions:
+		- that the mean and the variance does not change over time.
+		- The structure does not change over time. 
+		- helps understand trend without having variance anfd
   
 
 # **Part III:  Data Preparation**
