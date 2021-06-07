@@ -46,9 +46,12 @@
 		- The company experience a similar trend between day 270 to 360
 	- Between day 610 to 630:
 		- a profit loss of 4.5 millions. 
-		- We can theorize based on the data that the company experience a lot of cust
+		- We can theorize based on the data that the company experience a lot of customer churning.
+	- Between day 630 to 730:
+		- experience a profit of 8 Million.
+			- Just by looking at this trend and data we can theorize that the company experience minimal churning with a surgent of new customers.
 4.  Evaluate the stationarity of the time series.
-
+ 
 4.  Explain the steps used to prepare the data for analysis, including the training and test set split.
 
 5.  Provide a copy of the cleaned dataset.  
