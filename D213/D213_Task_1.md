@@ -78,17 +78,18 @@
 ![[Pasted image 20210608223222.png]]
 We can see that the frequency does not change over time. In addition, it does not show seasonal trends.
 •   the decomposed time series
-
-•   confirmation of the lack of trends in the residuals of the decomposed series
-
+![[Pasted image 20210608225953.png]]
+There is no seasonal or residual trends in the dataset.
 2.  Identify an autoregressive integrated moving average (ARIMA) model that takes into account the observed trend and seasonality of the time series data.
-
+![[Pasted image 20210608231341.png]]
+The image above shows a model that takes into account trends and seasonality trends. 
 3.  Perform a forecast using the derived ARIMA model.
-
+The following graph is a trend for the following year. According to the trend the company will see an increase of revenue from 16 million to 24 million. 
+![[Pasted image 20210608231132.png]]
 4.  Provide the output and calculations of the analysis you performed.
-
-5.  Provide the code used to support the implementation of the time series model.  
-  
+Images above show the outputs and calculations. Code will be provided with the submission. 
+6.  Provide the code used to support the implementation of the time series model.  
+  ✅️
 
 # **Part V:  Data Summary and Implications**
 
@@ -97,17 +98,19 @@ We can see that the frequency does not change over time. In addition, it does no
 1.  Discuss the results of your data analysis, including the following:
 
 •   the selection of an ARIMA model
-
-•   the prediction interval of the forecast
+- ![[Pasted image 20210608231908.png]]
+- The ARIMA model shows an increase of 8 million in revenue each year.
+- 
 
 •   a justification of the forecast length
 
 •   the model evaluation procedure and error metric
 
+When comparing the model we can see that the predicted model is off by ~.50.
 2.  Provide an annotated visualization of the forecast of the final model compared to the test set.
-
+![[Pasted image 20210609000050.png]]
 3.  Recommend a course of action based on your results.  
-  
+  Based on the dataset the Teleco company should try to underst
 
 # **Part VI:  Reporting**
 
