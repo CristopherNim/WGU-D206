@@ -68,11 +68,15 @@
 •   the presence or lack of a seasonal component
 - Lacking seasonal components of a data makes it challenging to understand trends. We can assume during Christmas the company has an increase during that time and after new years the company has an increased of churning. 
 •   trends
-
+- Every 90 days the company has increased in revenue. 
+- After 10 days of the 90th day increase the company has a loss in revenue.
 •   auto correlation function
-
-•   spectral density
-
+- ![[Pasted image 20210608220228.png]] 
+- Inside the light blue cone is set to 95th confidence interval. Values inside the blue cone are likely a correlation and not a statistical fluke. 
+•   spectral density 
+![[Pasted image 20210608223213.png]]
+![[Pasted image 20210608223222.png]]
+We can see that the frequency does not change over time. In addition, it does not show seasonal trends.
 •   the decomposed time series
 
 •   confirmation of the lack of trends in the residuals of the decomposed series
