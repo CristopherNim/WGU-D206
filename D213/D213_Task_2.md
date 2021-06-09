@@ -19,11 +19,11 @@
 •   presence of unusual characters (e.g., emojis, non-English characters, etc.)
 ![[Pasted image 20210609024800.png]]
 •   vocabulary size
-
+![[Pasted image 20210609033315.png]]
 •   proposed word embedding length
-
+  - The word embedding proposed is 5000
 •   statistical justification for the chosen maximum sequence length
-
+  - 
 2.  Describe the goals of the tokenization process, including any code generated and packages that are used to normalize text during the tokenization process.
 
 3.  Explain the padding process used to standardize the length of sequences, including the following in your explanation:
