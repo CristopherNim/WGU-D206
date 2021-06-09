@@ -27,8 +27,10 @@
 
 1.  Provide a line graph visualizing the realization of the time series.
 ![[Pasted image 20210605155341.png]]
-2.  Describe the time step formatting of the realization, including any gaps in measurement and the length of the sequence.
-- The revenue feature is used millions.
+2 .  Describe the time step formatting of the realization, including any gaps in measurement and the length of the sequence.
+- To create the visualization I used a line plot using the matplotlib library. The y axis was used for the revenue and x axis are the days. The Xticks are separated by 90 days. 
+4.  Evaluate the stationarity of the time series.
+ The revenue feature is used millions.
 	- For example, 2.5 is 2.5 millions
 	- For example, 5 is 5 millions
 - Between day 0 and 90:
@@ -50,8 +52,6 @@
 	- Between day 630 to 730:
 		- experience a profit of 8 Million.
 			- Just by looking at this trend and data we can theorize that the company experience minimal churning with a surgent of new customers.
-4.  Evaluate the stationarity of the time series.
- 
 4.  Explain the steps used to prepare the data for analysis, including the training and test set split.
 
 5.  Provide a copy of the cleaned dataset.  
