@@ -53,7 +53,9 @@
 		- experience a profit of 8 Million.
 			- Just by looking at this trend and data we can theorize that the company experience minimal churning with a surgent of new customers.
 4.  Explain the steps used to prepare the data for analysis, including the training and test set split.
-
+![[Pasted image 20210608213656.png]]
+- To create the model I removed the column "day"
+- The data was split 80% percent training and 20% percent test data
 5.  Provide a copy of the cleaned dataset.  
   
 
@@ -64,7 +66,7 @@
 1.  Report the annotated findings with visualizations of your data analysis, including the following elements:
 
 •   the presence or lack of a seasonal component
-
+- Lacking seasonal components of a data makes it challenging to understand trends. We can assume during Christmas the company has an increase during that time and after new years the company has an increased of churning. 
 •   trends
 
 •   auto correlation function
