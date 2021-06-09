@@ -21,11 +21,17 @@
 •   vocabulary size
 ![[Pasted image 20210609033315.png]]
 •   proposed word embedding length
-  - The word embedding proposed is 5000
+  - The word embedding proposed is 5000.
 •   statistical justification for the chosen maximum sequence length
-  - 
+  - ![[Pasted image 20210609183100.png]]
+  - We will choose a sequence of four. 
 2.  Describe the goals of the tokenization process, including any code generated and packages that are used to normalize text during the tokenization process.
-
+![[Pasted image 20210609183514.png]]
+![[Pasted image 20210609183445.png]]
+- The first to working with text is to split into words. each word is consider a token and the process of splitting text into tokens is called tokenization. 
+- ![[Pasted image 20210609184853.png]]
+- ![[Pasted image 20210609184905.png]]
+- ![[Pasted image 20210609184918.png]]
 3.  Explain the padding process used to standardize the length of sequences, including the following in your explanation:
 
 •   if the padding occurs before or after the text sequence
