@@ -3,10 +3,11 @@
 ### A.  Describe the purpose of this data analysis by doing the following:
 
 1.  Summarize **one** research question that you will answer using neural network models and NLP techniques. Be sure the research question is relevant to a real-world organizational situation and sentiment analysis captured in your chosen dataset.
-
+	1.  The leaders of the company want to know how comments affect the sales of the products.
 2.  Define the objectives or goals of the data analysis. Be sure the objectives or goals are reasonable within the scope of the research question and are represented in the available data.
-
+	1.  
 3.  Identify a type of neural network capable of performing a text classification task that can be trained to produce useful predictions on text sequences on the selected data set.  
+	1. Keras is a tool for constructing neural networks framework based on tensorflow. Keras an be used for text classification tasks and can be trained for useful predictions on text sequences.
   
 
 # **Part II:  Data Preparation**
@@ -16,7 +17,7 @@
 1.  Perform exploratory data analysis on the chosen dataset, and include an explanation of each of the following elements:
 
 •   presence of unusual characters (e.g., emojis, non-English characters, etc.)
-
+![[Pasted image 20210609024800.png]]
 •   vocabulary size
 
 •   proposed word embedding length
@@ -77,11 +78,7 @@
 # **Part V:  Summary and Recommendations**
 
 ### E.  Provide the code used to save the trained network within the neural network.  
-  
-
 ### F.  Discuss the functionality of your neural network, including the impact of the network architecture.  
-  
-
 ### G.  Recommend a course of action based on your results.
 
   
