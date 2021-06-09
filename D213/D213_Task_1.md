@@ -57,8 +57,8 @@
 ![[Pasted image 20210608213656.png]]
 - To create the model, I removed the column "day."
 - The data was split into 80% percent training and 20% percent test data
-5.  Provide a copy of the cleaned dataset.  
-  
+
+
 
 # **Part IV:  Model Identification and Analysis**
 
@@ -81,10 +81,10 @@ We can see that the frequency does not change over time. In addition, it does no
 •   the decomposed time series
 ![[Pasted image 20210608225953.png]]
 There are no seasonal or residual trends in the dataset.
-2.  Identify an autoregressive integrated moving average (ARIMA) model that considers the observed trend and seasonality of the time series data.
+2.  Identify an autoregressive integrated moving average (ARIMA) 
 ![[Pasted image 20210608231341.png]]
 The image above shows a model that takes into account trends and seasonality trends. 
-3.  Perform a forecast using the derived ARIMA model.
+3.  ARIMA model forecast:
 The following graph is a trend for the next year. According to the movement, the company will see an increase in revenue from 16 million to 24 million. 
 ![[Pasted image 20210608231132.png]]
 4.  
