@@ -66,38 +66,46 @@
  4. In this parameter all parameters are trainable and 0 non trainable parameters.
 
 
-3.  Justify the choice of hyperparameters, including the following elements:
+3.  Justify the choice of Hyperparameters, including the following elements:
+1. Hyperparameters: 
+	 1. Filters used for output space.
+	 2. maxlen of 100 to maximize the length of each sequence and reduced the model amount of memory
+	 3. embedding_dim - helps represent each word by a unique integer. 
 
-•   activation functions
-
-•   number of nodes per layer
-
-•   loss function
-
-•   optimizer
-
-•   stopping criteria
-
-•   evaluation metric  
-  
-
+1. I will use the sigmoid function for the output layer since the column we are trying to predict is binary.
+2. I have a binary classification so I will only used one node. 
+3. The loss function I will use is the binary cross entropy since the classification is binary. 
+4. The optimizer I will use is the "Adam" that has good performance. The adam optimizer is easy to implement and requires little memory.
+5.  We are not using a stopping criteria. 
+•   evaluation metric :
+![[Pasted image 20210609225858.png]]
+![[Pasted image 20210609225956.png]]
+![[Pasted image 20210609230632.png]]
 # **Part IV:  Model Evaluation**
 
 ### D.  Evaluate the model training process and its relevant outcomes by doing the following:
 
-1.  Discuss the impact of using stopping criteria instead of defining the number of epochs, including a screenshot showing the final training epoch.
-
+1. Using too many epochs can lead to overfitting of the training dataset, but the downsized of too few epochs can underfit models. In our model we used 20 epochs. stopping criteria stops the training once the model performance stops improving. 
 2.  Provide visualizations of the model’s training process, including a line graph of the loss and chosen evaluation metric.
 
 3.  Assess the fitness of the model and any measures taken to address overfitting.
-
+	1.  To prevent overfitting we minimize the use of too many parameters. 
+	2.  To prevent overfitting we used more rows on the training dataset and change the complexity of the networks. 
 4.  Discuss the predictive accuracy of the trained network.  
+	1.  ![[Pasted image 20210609225858.png]]
+	2.  Amazon comments dataset has an accuracy of 83%. With different tuining we might be able to increase to accuracy, but it will require more time and memory. In addition, obtaining more comments will help the accuracy.
+	4.  ![[Pasted image 20210609225956.png]]
+	5.  The accuracy for IMDB dataset is 81%. With different tuining we might be able to increase to accuracy, but it will require more time and memory. In addition, obtaining more comments will help the accuracy.
+	6.  ![[Pasted image 20210609230639.png]]
+	7.  The best accuracy for yelp comments dataset is 81%. With different tuining we might be able to increase to accuracy, but it will require more time and memory. In addition, obtaining more comments will help the accuracy.
   
 
 # **Part V:  Summary and Recommendations**
 
 ### E.  Provide the code used to save the trained network within the neural network.  
+
 ### F.  Discuss the functionality of your neural network, including the impact of the network architecture.  
+
 ### G.  Recommend a course of action based on your results.
 
   
