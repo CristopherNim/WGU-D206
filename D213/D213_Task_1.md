@@ -26,9 +26,9 @@
 
 1.  Provide a line graph visualizing the realization of the time series.
 ![[Pasted image 20210605155341.png]]
-2 .  Describe the time step formatting of the realization, including any gaps in measurement and the length of the sequence.
+2.  Describe the time step formatting of the realization, including any gaps in measurement and the length of the sequence.
 - To create the visualization, I used a line plot using the matplotlib library. The y-axis was used for the revenue, and the x-axis is the days. The Xticks are separated by 90 days. 
-4.  Evaluate the stationarity of the time series.
+3.  Evaluate the stationarity of the time series.
  The revenue feature is used millions.
 - For example, 2.5 is 2.5 million
 	- For example, five is five million
@@ -50,8 +50,13 @@
 		- We can theorize based on the data that the company experienced a lot of customer churning.
 	- Between day 630 to 730:
 		- experience a profit of 8 Million
-		- Just by looking at this trend and data, we can theorize that the company experiences minimal churning with a surge of new customers.
+		- Just by looking at this trend and data, we can theorize that the company experiences minimal churning with a surge of new customers
 
+
+3a. From the visualizations below, we understand that data is stationary for the following reasons:
+ - No seasonality and no strong trends (noticeable trends)
+ - Series (column) shows the increasing variance
+ ![[Pasted image 20210610235125.png]]
 
 4.  Explain the steps used to prepare the data for analysis, including the training and test set split.
 ![[Pasted image 20210608213656.png]]
@@ -83,7 +88,8 @@ We can see that the frequency does not change over time. In addition, it does no
 There are no seasonal or residual trends in the dataset.
 2.  Identify an autoregressive integrated moving average (ARIMA) 
 ![[Pasted image 20210608231341.png]]
-The image above shows a model that takes into account trends and seasonality trends. 
+![[Pasted image 20210610233538.png]]
+**The image above shows a model that takes into account trends and seasonality trends. In addition, we tested for seasonality and observed no seasonality. The data does not show noticeable trends.**
 3.  ARIMA model forecast:
 The following graph is a trend for the next year. According to the movement, the company will see an increase in revenue from 16 million to 24 million. 
 ![[Pasted image 20210608231132.png]]
@@ -99,14 +105,14 @@ The images above show the outputs and calculations. Code will be provided with t
 •   the selection of an ARIMA model
 ![[Pasted image 20210609003401.png]]
 - The ARIMA model shows an increase of 8 million in revenue each year.
-•   a justification of the forecast length
-1. the forecast length is based on one year. Trying to predict even longer will be an inaccurate result to the real world as things always change outside just the data. For example, another company is becoming more popular and growing in user base.
+ - a justification of the forecast length
+	 -  the forecast length is based on one year. Trying to predict even longer will be an inaccurate result to the real world as things always change outside just the data. For example, another company is becoming more popular and growing in user base.
 •   the model evaluation procedure and error metric
 ![[Pasted image 20210609001125.png]]
 The model accuracy is 95% based on the R^2 score. 
 2.  Provide an annotated visualization of the forecast of the final model compared to the test set.
-![[Pasted image 20210609000050.png]]
-3.  Recommend a course of action:
+![[Pasted image 20210610234859.png]]
+4.  Recommend a course of action:
   Every time the company has an increase in revenue, the company loses revenue due to churning. Based on the analysis, I would suggest that the Teleco company leaders invest research on customer churning to prevent the customer from churning to keep the trend upward. 
 
 ### G.
