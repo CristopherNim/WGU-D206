@@ -53,11 +53,12 @@
 		- Just by looking at this trend and data, we can theorize that the company experiences minimal churning with a surge of new customers
 
 
-3a. From the visualizations below, we understand that data is stationary for the following reasons:
- - No seasonality and no strong trends (noticeable trends)
- - Series (column) shows the increasing variance
- ![[Pasted image 20210610235125.png]]
-
+3a. Testing for stationary or non stationarity
+ ###### Augmented Dickey-Fuller Test
+ ![[Pasted image 20210629223655.png]] 
+ - The null hypothesis is that the data is non-stationarity and alternative hypothesis is that the data is stationarity. 
+ - The p-value is greater than the significant level of 0.05 we accept the null hypothesis. So, according the ADF test the data is non-stationarity.
+ 
 4.  Explain the steps used to prepare the data for analysis, including the training and test set split.
 ![[Pasted image 20210608213656.png]]
 - To create the model, I removed the column "day."
@@ -90,6 +91,8 @@ There are no seasonal or residual trends in the dataset.
 ![[Pasted image 20210608231341.png]]
 ![[Pasted image 20210610233538.png]]
 **The image above shows a model that takes into account trends and seasonality trends. In addition, we tested for seasonality and observed no seasonality. The data does not show noticeable trends.**
+![[Pasted image 20210629231236.png]]
+![[Pasted image 20210629231320.png]]
 3.  ARIMA model forecast:
 The following graph is a trend for the next year. According to the movement, the company will see an increase in revenue from 16 million to 24 million. 
 ![[Pasted image 20210608231132.png]]
