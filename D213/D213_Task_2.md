@@ -63,16 +63,16 @@ vocabulary size
 	 1. Filters used for output space.
 	 2. maxlen of 100 to maximize the length of each sequence and reduced the model amount of memory
 	 3. embedding_dim - helps represent each word by a unique integer. 
-	 4. The amount nodes is between the size of input layer and the size of the output layer. 
+	 4. 4. The amount nodes are between the input layer's size and the size of the output layer. 
 	 5. Early stopping is used to prevent overfitting 
 
 1. I will use the sigmoid function for the output layer since the column we are trying to predict is binary.
 2. I have a binary classification, so I will only use one node. 
 3. The loss function I will use is the binary cross-entropy since the classification is binary. 
 4. The optimizer I will use is the "Adam," which has good performance. The adam optimizer is easy to implement and requires little memory.
-5.  Early stopping is being used to prevent overfitting. Early stopping will occurred when validation loss occurs or it stops improving 
+5.  Early stopping is being used to prevent overfitting. Early stopping will occur when validation loss occurs, or it stops improving.
 	1.  ![[Pasted image 20210630211923.png]]
-6.  •   evaluation metric : The evaluation metric is accuracy
+6.  •   evaluation metric: The evaluation metric is accuracy
 ![[Pasted image 20210630212657.png]]
 ![[Pasted image 20210609225858.png]]
 ![[Pasted image 20210609225956.png]]
@@ -81,7 +81,7 @@ vocabulary size
 
 ### D.  Evaluate the model training process and its relevant outcomes by doing the following:
    **Per the report:  Discuss the impact of using stopping criteria instead of defining the number of epochs**
-1. Using too many epochs can lead to overfitting of the training dataset, but the downsized of too few epochs can underfit models. In our model, we used 20 epochs. Stopping criteria stops the training once the model performance stops improving. Here we used few epochs, because I do not have the computer to run anymore. **per the report:  including a screenshot showing the final training epoch.** 
+1. Using too many epochs can lead to overfitting of the training dataset, but the downsized of too few epochs can underfit models. In our model, we used 20 epochs. Stopping criteria stops the training once the model performance stops improving. Here we used few epochs because I do not have the computer to run anymore. **per the report:  including a screenshot showing the final training epoch.**
 	1. ![[Pasted image 20210609230639.png]]
 	2.  ![[Pasted image 20210609225956.png]] 
 	3.  ![[Pasted image 20210609225858.png]]
@@ -102,11 +102,11 @@ vocabulary size
 
 
 ### F.  FUNCTIONALITY 
-
+A neural network is an attempt to replicate the human brain and its network of neurons. We used the sequential model API of Keras. The sequential model is a linear stack of layers. The layers that I used were dense, Conv1d, embedding, global max pooling. We compile our model using the optimizer of adam, which I discussed earlier in the article. I used activation of relu and sigmoid because both of them work on binary outcomes. 
 
 
 ### G.  
-Based on the model we have created, we can see if comments coming in are positive or negative. We can categorize future comments with a confidence of 80%. This will give the company leaders an idea on how each product is doing. My recommendation is that we can use this model to see if the comments are positive or negative for existing or new product lunches.
+Based on the model we have created, we can see if comments are positive or negative. We can categorize future comments with a confidence of 80%. This will give the company leaders an idea on how each product is doing. My recommendation is to use this model to see if the comments are positive or negative for existing or new product launches.
   
 
 # **Part VI: Reporting** 
@@ -114,7 +114,7 @@ Based on the model we have created, we can see if comments coming in are positiv
   
 
 ### I.  List the web sources used to acquire data or segments of third-party code to support the application.  
-https://realpython.com/python-keras-text-classification/#hyperparameters-optimization  
+N/A did not used any
 
 ### J.  Acknowledge sources, using in-text citations and references, for content that is quoted, paraphrased, or summarized.  
   N/A
