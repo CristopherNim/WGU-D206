@@ -56,7 +56,7 @@
 3a. Testing for stationary or non stationarity
  ###### Augmented Dickey-Fuller Test
  ![[Pasted image 20210629223655.png]] 
- - The null hypothesis is that the data is non-stationarity and alternative hypothesis is that the data is stationarity. 
+ - The null hypothesis is that the data is non-stationarity, and alternative hypothesis is that the data is stationarity. 
  - The p-value is greater than the significant level of 0.05 we accept the null hypothesis. So, according the ADF test the data is non-stationarity.
  
 4.  Explain the steps used to prepare the data for analysis, including the training and test set split.
@@ -115,6 +115,7 @@ The images above show the outputs and calculations. Code will be provided with t
 The model accuracy is 95% based on the R^2 score. 
 2.  Provide an annotated visualization of the forecast of the final model compared to the test set.
 ![[Pasted image 20210610234859.png]]
+![[Pasted image 20210629231724.png]]
 4.  Recommend a course of action:
   Every time the company has an increase in revenue, the company loses revenue due to churning. Based on the analysis, I would suggest that the Teleco company leaders invest research on customer churning to prevent the customer from churning to keep the trend upward. 
 
