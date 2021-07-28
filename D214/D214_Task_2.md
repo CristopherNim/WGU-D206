@@ -2,6 +2,8 @@
 
 ###### A.  Summarize the original real-data research question you identified in task 1. Your summary should include justification for the research question you identified in task 1, a description of the context in which the research question exists, and a discussion of your hypothesis.
 
+**Research Question:** Can a machine learning model be created statistically significantly to predict if a nursing home will be fined a ticket?
+The feature we are trying to predict is the number of fines. The dataset contains other features that will aid in the prediction of number of fines. some of the columns that will aid in the predicted column are 
 # **Data Collection**
 
 ###### B.  Report on your data-collection process by describing the relevant data you collected, discussing one advantage and one disadvantage of the data-gathering methodology you used, and discussing how you overcame any challenges you encountered during the process of collecting your data.
