@@ -1,12 +1,22 @@
 # **Research Question**
 
-###### A.  Summarize the original real-data research question you identified in task 1. Your summary should include justification for the research question you identified in task 1, a description of the context in which the research question exists, and a discussion of your hypothesis.
-
 **Research Question:** Can a machine learning model be created statistically significantly to predict if a nursing home will be fined a ticket?
-The feature we are trying to predict is the number of fines. The dataset contains other features that will aid in the prediction of number of fines. some of the columns that will aid in the predicted column are 
+The feature we are trying to predict is the number of fines. The dataset contains other features that will aid in the prediction of number of fines. some of the columns that will aid in the predicted column are nursing home rating, the size of the nursing home, how many beds each nursing home has, and the amount of complains each nursing home has. I believe that there is enough valuable information with the features to try to answer the research question.
+
+**Null Hypothesis**-: The independent variable cannot statistically significantly predict if a nursing home will be fined a ticket. The null hypothesis states that there is not enough valuable information in the features that will aid in the prediction of the number of fines. 
+
+**Alternate Hypothesis**-: The independent variable can statistically significantly predict if a nursing home will be fined a ticket. The alternative hypothesis states there is enough information valuable information in the features to accurately predict the number of fines.
+
 # **Data Collection**
 
 ###### B.  Report on your data-collection process by describing the relevant data you collected, discussing one advantage and one disadvantage of the data-gathering methodology you used, and discussing how you overcame any challenges you encountered during the process of collecting your data.
+           
+
+All data analyzed here comes from the Centers for Medicare and Medicaid Services. BuzzFeed News on GitHub put together the Dataset. The [Dataset](https://data.medicare.gov/data/nursing-home-compare) includes features like provider name, city, zip code, type of provider, business name, and hours of staff.
+
+Limitation: The dataset contains null values on the exact number of patients in care for each nursing home. Filling these missing values will prove to be challenging. Some of the rows with total staff hours also contain nulls. Delimitations: The Dataset has about ~14,000 rows, and some of the rows specified above will be removed with null values.
+
+
 
 # **Data Extraction and Preparation**
 
