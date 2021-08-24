@@ -1,4 +1,4 @@
-# **Research Question**
+- [ ] # **Research Question**
 
 **Research Question:** Can a machine learning model be created statistically significantly to predict if a nursing home will be fined a ticket?
 The feature we are trying to predict is the number of fines. The dataset contains other features that will aid in the prediction of number of fines. some of the columns that will aid in the predicted column are nursing home rating, the size of the nursing home, how many beds each nursing home has, and the amount of complains each nursing home has. I believe that there is enough valuable information with the features to try to answer the research question.
