@@ -22,8 +22,7 @@ Limitation: The dataset contains null values on the exact number of patients in 
 
 ###### C.  Describe your data-extraction and -preparation process and provide screenshots to illustrate _each_ step. Explain the tools and techniques you used for data extraction and data preparation, including how these tools and techniques were used on the data. Justify why you used these particular tools and techniques, including one advantage and one disadvantage when they are used with your data-extraction and -preparation methods. 
 
-I am extracting data and preparing data to predict the number of fines feature. I looked at the spreadsheet and noticed that every time a fine occur the total amount of fines in dollars will increase. In addition, total number of penalties will essentially match the number of fines columns. In real life we would not know
-
+I am extracting data and preparing data to predict the number of fines feature. I looked at the spreadsheet and noticed that every time a fine occur the total amount of fines in dollars will increase. In addition, total number of penalties will essentially match the number of fines columns. If we left both features our model will produce a 95% accuracy rate. ![[Pasted image 20210920145154.png]]
 
 
 # **Analysis**
