@@ -35,7 +35,3 @@ _Note: appearing on camera is optional._
 •   a summary of proposed actions 
 
 •   expected benefits of the study (be as specific and quantitative as possible)
-
-###### C.  Acknowledge sources, using in-text citations and references, for content that is quoted, paraphrased, or summarized.
-
-###### D.  Demonstrate professional communication in the content and presentation of your submission.
