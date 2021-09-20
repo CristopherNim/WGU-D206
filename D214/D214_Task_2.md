@@ -12,7 +12,7 @@ The feature we are trying to predict is the number of fines. The dataset contain
 ###### B.  Report on your data-collection process by describing the relevant data you collected, discussing one advantage and one disadvantage of the data-gathering methodology you used, and discussing how you overcame any challenges you encountered during the process of collecting your data.
            
 
-All data analyzed here comes from the Centers for Medicare and Medicaid Services. BuzzFeed News on GitHub put together the Dataset. The [Dataset](https://data.medicare.gov/data/nursing-home-compare) includes features like provider name, city, zip code, type of provider, business name, and hours of staff.
+All data analyzed here comes from the Centers for Medicare and Medicaid Services. BuzzFeed News on GitHub put together the Dataset. The [Dataset](https://data.medicare.gov/data/nursing-home-compare) includes features like provider name, city, zip code, type of provider, business name, and hours of staff. total amount of fines in dollars, total number of penalties features will be remove, because if a fine occurs  money and a penalty will happen. 
 
 Limitation: The dataset contains null values on the exact number of patients in care for each nursing home. Filling these missing values will prove to be challenging. Some of the rows with total staff hours also contain nulls. Delimitations: The Dataset has about ~14,000 rows, and some of the rows specified above will be removed with null values.
 
@@ -21,6 +21,10 @@ Limitation: The dataset contains null values on the exact number of patients in 
 # **Data Extraction and Preparation**
 
 ###### C.  Describe your data-extraction and -preparation process and provide screenshots to illustrate _each_ step. Explain the tools and techniques you used for data extraction and data preparation, including how these tools and techniques were used on the data. Justify why you used these particular tools and techniques, including one advantage and one disadvantage when they are used with your data-extraction and -preparation methods. 
+
+I am extracting data and preparing data to predict the number of fines feature. I looked at the spreadsheet and noticed that every time a fine occur the total amount of fines in dollars will increase. In addition, total number of penalties will essentially match the number of fines columns. In real life we would not know
+
+
 
 # **Analysis**
 
