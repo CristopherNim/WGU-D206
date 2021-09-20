@@ -19,9 +19,6 @@ Limitation: The dataset contains null values on the exact number of patients in 
 
 ###### C.  Describe your data-extraction and -preparation process and provide screenshots to illustrate _each_ step. Explain the tools and techniques you used for data extraction and data preparation, including how these tools and techniques were used on the data. Justify why you used these particular tools and techniques, including one advantage and one disadvantage when they are used with your data-extraction and -preparation methods. 
 
-Talk about advantages of random forest and disadvantages. The assumptions 
-
-
 I am extracting data and preparing data to predict the number of fines feature. I looked at the spreadsheet and noticed that every time a fine occur the total amount of fines in dollars will increase. In addition, total number of penalties will essentially match the number of fines columns. If we left both features our model will produce a 95% accuracy rate. ![[Pasted image 20210920145154.png]]
 
 Once we remove these two features we get a 69% accuracy rate to predicting whether or not the nursing home will be fine. ![[Pasted image 20210920145320.png]]'
@@ -42,6 +39,19 @@ The requirement for the project is to have 10,000 or more rows. The data set has
 ##### Turning categorical values into integers
 Random Forest model needs all features to be numerical, integers or float values. I used pandas library to turn categorical values into numerical for the model to work and produce no errors. The following python code turns all categorical values into integers.
 ![[Pasted image 20210920153300.png]] 
+
+The model I will used to predict the fined feature is random forest. I will outline the assumptions, advantages, and disadvantages.
+##### Random Forest Assumptions
+The only assumption to random forest model is that it can handle outliers and multi-modal data. 
+##### advantages to Random Forest 
+- Robust to outliers. 
+	- This will help us deal with outliers since I have no background in nursing home and do not have an expert on the data. 
+- Runs efficiently on large datasets
+- low risk to overfitting
+##### Disadvantages to Random Forest 
+- Slow training 
+- Biased when dealing with categorical variables. 
+
 
 # **Analysis**
 
