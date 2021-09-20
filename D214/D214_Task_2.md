@@ -21,7 +21,7 @@ Limitation: The dataset contains null values on the exact number of patients in 
 
 I am extracting data and preparing data to predict the number of fines feature. I looked at the spreadsheet and noticed that every time a fine occur the total amount of fines in dollars will increase. In addition, total number of penalties will essentially match the number of fines columns. If we left both features our model will produce a 95% accuracy rate. ![[Pasted image 20210920145154.png]]
 
-Once we remove these two features we get a 69% accuracy rate to predicting whether or not the nursing home will be fine. ![[Pasted image 20210920145320.png]]'
+Once we remove these two features we get a 79% accuracy rate to predicting whether or not the nursing home will be fine. ![[Pasted image 20210920191458.png]]
 
 It is important to remove these two features, because in real life we won't know the amount of money in fines we will get until we get fined. The same goes for the number of penalties. The random forest model does not need the data to be normalized or for outliers to be removed. Random forest use trees, which split the data into multiple groups. For example the outliers don't have extra effect like in regression models, because they will only affect the leaf node they are in. The other leaf nodes are left unaffected. We can remove the outliers but it will essentially be a waste of time.
 ![[Pasted image 20210920150140.png]]
@@ -45,14 +45,18 @@ The model I will used to predict the fined feature is random forest. I will outl
 The only assumption to random forest model is that it can handle outliers and multi-modal data. 
 ##### advantages to Random Forest 
 - Robust to outliers. 
-	- This will help us deal with outliers since I have no background in nursing home and do not have an expert on the data. 
+	- This will help us deal with outliers since I have no background in nursing home data and do not have an expert on the data. 
 - Runs efficiently on large datasets
+	- The data is relative large
 - low risk to overfitting
 ##### Disadvantages to Random Forest 
 - Slow training 
+	- It will take time to train the data 
 - Biased when dealing with categorical variables. 
+	- The feature categorical columns will have some sort of biased attached to them
 
-
+###### Preparing the data for the Random Forest Model
+1) The y variable will represent whether the nursing home was fined or not. The X features are going to be use to predict the y feature. 
 # **Analysis**
 
 ###### D.  Report on your data-analysis process by describing the analysis technique(s) you used to appropriately analyze the data. Include the calculations you performed and their outputs. Justify how you selected the analysis technique(s) you used, including one advantage and one disadvantage of these technique(s).
