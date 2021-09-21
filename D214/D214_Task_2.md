@@ -1,13 +1,20 @@
 - [ ] # **Research Question**
 
 **Research Question:** Can a machine learning model be created statistically significantly to predict if a nursing home will be fined a ticket?
-The feature we are trying to predict is the number of fines. The dataset contains other features that will aid in the prediction of number of fines. some of the columns that will aid in the predicted column are nursing home rating, the size of the nursing home, how many beds each nursing home has, and the amount of complains each nursing home has. I believe that there is enough valuable information with the features to try to answer the research question.
+The feature we are trying to predict whether the nursing home is in danger of getting fined. The dataset contains other features that will aid in the prediction of predictable variable. some of the columns that will aid in the predicted column are nursing home rating, the size of the nursing home, how many beds each nursing home has, and the amount of complains each nursing home has. I believe that there is enough valuable information with the features to try to answer the research question.
 
 **Null Hypothesis**-: The independent variable cannot statistically significantly predict if a nursing home will be fined a ticket. The null hypothesis states that there is not enough valuable information in the features that will aid in the prediction of the number of fines. 
 
 **Alternate Hypothesis**-: The independent variable can statistically significantly predict if a nursing home will be fined a ticket. The alternative hypothesis states there is enough information valuable information in the features to accurately predict the number of fines.
 
-# **Data Collection**          
+# **Data Collection (Library)**       
+![[Pasted image 20210920195330.png]]
+![[Pasted image 20210920195348.png]]
+![[Pasted image 20210920195424.png]]
+![[Pasted image 20210920195441.png]]
+![[Pasted image 20210920195505.png]]
+![[Pasted image 20210920195540.png]]
+![[Pasted image 20210920195559.png]]
 
 All data analyzed here comes from the Centers for Medicare and Medicaid Services. BuzzFeed News on GitHub put together the Dataset. The [Dataset](https://data.medicare.gov/data/nursing-home-compare) includes features like provider name, city, zip code, type of provider, business name, and hours of staff. total amount of fines in dollars, total number of penalties features will be remove, because if a fine occurs  money and a penalty will happen. 
 
@@ -17,7 +24,15 @@ Limitation: The dataset contains null values on the exact number of patients in 
 
 # **Data Extraction and Preparation**
 
-###### C.  Describe your data-extraction and -preparation process and provide screenshots to illustrate _each_ step. Explain the tools and techniques you used for data extraction and data preparation, including how these tools and techniques were used on the data. Justify why you used these particular tools and techniques, including one advantage and one disadvantage when they are used with your data-extraction and -preparation methods. 
+###### C.  
+ libraries for Python to prepare the data and preparation 
+ - Numpy - Numpy contains statistical functions.
+- pandas - create the data frame and allow data manipulation.
+ - sklearn -  Contains the Naive Bayes algorithm function.
+ - seaborn and matplotlib libraries will allow us to make visualizations. 
+
+
+The first step is to turn the feature of number of fines into a binary column. The goal of the model is to predict whether the nursing home is in danger to getting fine not how many times. I used the following code in python to turn the numerical feature to a binary column. ![[Pasted image 20210920192021.png]] 
 
 I am extracting data and preparing data to predict the number of fines feature. I looked at the spreadsheet and noticed that every time a fine occur the total amount of fines in dollars will increase. In addition, total number of penalties will essentially match the number of fines columns. If we left both features our model will produce a 95% accuracy rate. ![[Pasted image 20210920145154.png]]
 
@@ -57,6 +72,10 @@ The only assumption to random forest model is that it can handle outliers and mu
 
 ###### Preparing the data for the Random Forest Model
 1) The y variable will represent whether the nursing home was fined or not. The X features are going to be use to predict the y feature. 
+2) I then split X feature into training and testing set. I do the same for the y feature. Furthermore, the test sizes will be 20% and 80% of the data will be used for the training sets.  ![[Pasted image 20210920193147.png]]
+3) We train the data to create a forest. ![[Pasted image 20210920193244.png]]
+4) Finally, We test the data. ![[Pasted image 20210920193627.png]]
+
 # **Analysis**
 
 ###### D.  Report on your data-analysis process by describing the analysis technique(s) you used to appropriately analyze the data. Include the calculations you performed and their outputs. Justify how you selected the analysis technique(s) you used, including one advantage and one disadvantage of these technique(s).
@@ -64,5 +83,3 @@ The only assumption to random forest model is that it can handle outliers and mu
 # **Data Summary and Implications**
 
 ###### E.  Summarize the implications of your data analysis by discussing the results of your data analysis in the context of the research question, including one limitation of your analysis. Within the context of your research question, recommend a course of action based on your results. Then propose **two** directions or approaches for future study of the data set.
-
-###### F.  Acknowledge sources, using in-text citations and references, for content that is quoted.
