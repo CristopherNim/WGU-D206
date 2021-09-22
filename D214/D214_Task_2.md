@@ -22,7 +22,7 @@ Limitation: The dataset contains null values on the exact number of patients in 
 
 
 
-# **Data Extraction and Preparation**
+# **Data Extraction, Preparation Analysis**
 
 ###### C.  
  libraries for Python to prepare the data and preparation 
@@ -75,10 +75,11 @@ The only assumption to random forest model is that it can handle outliers and mu
 2) I then split X feature into training and testing set. I do the same for the y feature. Furthermore, the test sizes will be 20% and 80% of the data will be used for the training sets.  ![[Pasted image 20210920193147.png]]
 3) We train the data to create a forest. ![[Pasted image 20210920193244.png]]
 4) Finally, We test the data. ![[Pasted image 20210920193627.png]]
-
-# **Analysis**
-
-###### D.  Report on your data-analysis process by describing the analysis technique(s) you used to appropriately analyze the data. Include the calculations you performed and their outputs. Justify how you selected the analysis technique(s) you used, including one advantage and one disadvantage of these technique(s).
+- model score
+- feature importance
+- confusion matrix 
+- chi-square 
+- The model score after chi-square 
 
 # **Data Summary and Implications**
 
