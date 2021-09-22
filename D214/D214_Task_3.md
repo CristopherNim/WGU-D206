@@ -26,7 +26,7 @@ _Note: appearing on camera is optional._
 
 •   a statement of the problem and the hypothesis 
 
-•   a summary of the data-analysis process    
+•   a summary of the data-analysis process 
 
 •   an outline of the findings 
 
