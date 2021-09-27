@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "D214/D214_Task_3.md",
+            "file": "D214/PowerPoint_Capstone.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "D214/D214_Task_3.md",
+                "file": "D214/PowerPoint_Capstone.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "D214/D214_Task_3.md"
+                "file": "D214/PowerPoint_Capstone.md"
               }
             }
           }
@@ -98,6 +98,7 @@
   },
   "active": "e3e1708627d3d4b2",
   "lastOpenFiles": [
+    "D214/Untitled.md",
     "D214/D214_Task_3.md",
     "D214/D214_Task_2.md",
     "Untitled.md",
@@ -106,7 +107,6 @@
     "D213/D213_Task_2.md",
     "D213/D213_Task_1.md",
     "D214/D209 Task 1.md",
-    "D208/D208 Task 2.md",
-    "D208/D208 Task 1.md"
+    "D208/D208 Task 2.md"
   ]
 }
